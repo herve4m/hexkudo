@@ -1,0 +1,101 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+scores_dialog.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoScoresDialog: Adw.Dialog {
+  content-width: 500;
+  content-height: 480;
+
+  Adw.ToolbarView toolbar {
+    [top]
+    Adw.HeaderBar headerbar {
+      title-widget: DropDown dropdown {
+        notify::selected-item => $select_puzzle_cb() swapped;
+      };
+    }
+
+    content: Adw.ViewStack view_stack {
+      Adw.StatusPage no_score_page {
+        icon-name: "trophy-symbolic";
+        description: _("Play some games and your scores will show up here.");
+
+        styles [
+          "dim-label",
+        ]
+      }
+
+      Adw.Clamp view_score_page {
+        maximum-size: 476;
+        margin-top: 12;
+        margin-bottom: 12;
+
+        ColumnView column_view {
+          margin-end: 12;
+          margin-start: 12;
+          margin-top: 12;
+          margin-bottom: 12;
+
+          ColumnViewColumn position_column {
+            title: _("Pos");
+
+            factory: SignalListItemFactory {
+              setup => $item_setup_cb() swapped;
+              bind => $item_bind_pos_cb() swapped;
+            };
+          }
+
+          ColumnViewColumn score_column {
+            title: _("Time");
+            expand: true;
+
+            factory: SignalListItemFactory {
+              setup => $item_setup_cb() swapped;
+              bind => $item_bind_score_cb() swapped;
+            };
+          }
+
+          ColumnViewColumn error_column {
+            title: _("Errors");
+
+            factory: SignalListItemFactory {
+              setup => $item_setup_cb() swapped;
+              bind => $item_bind_errors_cb() swapped;
+            };
+          }
+
+          ColumnViewColumn datetime_column {
+            title: _("Date/Time");
+            expand: true;
+
+            factory: SignalListItemFactory {
+              setup => $item_setup_date_time_cb() swapped;
+              bind => $item_bind_datetime_cb() swapped;
+            };
+          }
+        }
+      }
+    };
+  }
+}

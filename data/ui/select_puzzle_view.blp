@@ -1,0 +1,82 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+select_puzzle_view.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoSelectPuzzleView: Adw.Bin {
+  Adw.ToolbarView {
+    top-bar-style: raised;
+
+    [top]
+    Adw.HeaderBar headerbar {
+      centering-policy: strict;
+
+      title-widget: Adw.WindowTitle windowtitle {
+        title: _("Hexkudo");
+        subtitle: _("Select Puzzle");
+      };
+
+      [start]
+      Button back_button {
+        visible: true;
+        halign: center;
+        valign: center;
+        tooltip-text: _("Back");
+        use-underline: true;
+        action-name: "app.back-start";
+        icon-name: "go-previous-symbolic";
+      }
+
+      [end]
+      $HexkudoMenuButton menu_button {}
+    }
+
+    [bottom]
+    ActionBar {
+      [center]
+      Button {
+        margin-top: 12;
+        label: _("_Start Game");
+        use-underline: true;
+        clicked => $start_game_cb() swapped;
+
+        styles [
+          "pill",
+          "suggested-action",
+        ]
+      }
+    }
+
+    content: Adw.StatusPage {
+      title: _("Select Puzzle");
+      valign: start;
+
+      child: Adw.Clamp {
+        maximum-size: 400;
+
+        Adw.PreferencesGroup preference_group {}
+      };
+    };
+  }
+}

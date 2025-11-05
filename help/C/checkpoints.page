@@ -1,0 +1,46 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="checkpoints">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Set and undo checkpoints.</desc>
+  </info>
+
+  <title>Setting Checkpoints</title>
+
+  <p>You can save the current state of the puzzle, and return to that known state later.</p>
+
+  <p>To set a checkpoint, click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) and select <gui style="menuitem">Set Checkpoint</gui>.</p>
+
+  <p>To go back to the state of the puzzle at the time of the checkpoint, click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>), select <gui style="menuitem">Undo to Last Checkpoint</gui>, and confirm the operation.</p>
+
+  <p>
+    You can take several checkpoints while solving the puzzle.
+    The undo function reverts to the latest checkpoint, and discards this checkpoint.
+    For example, consider that you set three checkpoints, A, B, and C, in this order:
+  </p>
+
+  <list>
+    <item><p>The first undo operation reverts to the puzzle state at the C checkpoint and discards this C checkpoint.</p></item>
+    <item><p>Another undo reverts to the B checkpoint and discards the B checkpoint.</p></item>
+    <item><p>Yet another undo reverts to the A checkpoint and discards this last checkpoint.</p></item>
+  </list>
+
+  <p>You can also discard all your work and start over by clicking the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) and selecting <gui style="menuitem">Reset Puzzle</gui>.</p>
+</page>

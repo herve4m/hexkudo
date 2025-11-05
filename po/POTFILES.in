@@ -1,0 +1,35 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.herve4m.Hexkudo.desktop.in.in
+data/io.github.herve4m.Hexkudo.metainfo.xml.in.in
+data/io.github.herve4m.Hexkudo.gschema.xml.in
+
+data/ui/done_dialog.blp
+data/ui/game_view.blp
+data/ui/menu_button.blp
+data/ui/preferences_dialog.blp
+data/ui/print_dialog.blp
+data/ui/print_progress.blp
+data/ui/scores_dialog.blp
+data/ui/select_puzzle_view.blp
+data/ui/shortcuts_dialog.blp
+data/ui/start_view.blp
+data/ui/window.blp
+
+src/generator/puzzles/easy_classic_22.rs
+src/generator/puzzles/easy_heart_24.rs
+src/generator/puzzles/easy_square_22.rs
+src/generator/puzzles/hard_classic_60.rs
+src/generator/puzzles/hard_heart_58.rs
+src/generator/puzzles/hard_square_60.rs
+src/generator/puzzles/medium_classic_36.rs
+src/generator/puzzles/medium_heart_45.rs
+src/generator/puzzles/medium_square_38.rs
+src/generator/puzzles.rs
+src/widgets/puzzle_list_item.rs
+src/widgets/done_dialog.rs
+src/widgets/popover_number.rs
+src/widgets/print_job.rs
+src/widgets/game_view.rs
+src/widgets/preferences_dialog.rs
+src/application.rs

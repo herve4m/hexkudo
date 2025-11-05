@@ -1,0 +1,40 @@
+/*
+puzzle_list_item.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoPuzzleListItem: Adw.ActionRow {
+  [prefix]
+  CheckButton check_button {
+    can-focus: false;
+    can-target: false;
+  }
+
+  [suffix]
+  Picture image {
+    can-focus: false;
+    can-target: false;
+  }
+
+  use-underline: false;
+  activatable-widget: check_button;
+}

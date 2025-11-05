@@ -1,0 +1,191 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+menu_button.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+menu primary-menu {
+  section controls-menu {
+    item {
+      label: _("_New Game…");
+      action: "app.new-game";
+    }
+
+    item {
+      label: _("New _Game (Same Puzzle)");
+      action: "app.new-game-same-puzzle";
+    }
+
+    item {
+      label: _("_Reset Puzzle");
+      action: "game-view.reset-puzzle";
+    }
+
+    item {
+      label: _("_Scores");
+      action: "app.scores";
+    }
+  }
+
+  section {
+    submenu {
+      label: _("Prin_t");
+
+      section {
+        item {
+          label: _("Print _Current Puzzle…");
+          action: "game-view.print-current";
+        }
+
+        item {
+          label: _("Print _Multiple Puzzles…");
+          action: "app.print-multiple";
+        }
+      }
+    }
+
+    section {
+      label: _("Zoom");
+      display-hint: "inline-buttons";
+
+      item {
+        custom: "zoom-out";
+      }
+
+      item {
+        custom: "zoom-in";
+      }
+
+      item {
+        custom: "menu-fullscreen";
+      }
+    }
+  }
+
+  section {
+    item {
+      label: _("Set Checkp_oint");
+      action: "game-view.set-checkpoint";
+    }
+
+    item {
+      label: _("_Undo to Last Checkpoint…");
+      action: "game-view.undo-checkpoint";
+    }
+
+    item {
+      label: _("Solve Current Ce_ll");
+      action: "game-view.solve-current-cell";
+    }
+
+    item {
+      label: _("Solve Pu_zzle");
+      action: "game-view.solve-puzzle";
+    }
+  }
+
+  section {
+    item {
+      label: _("_Preferences");
+      action: "app.preferences";
+    }
+
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "app.shortcuts";
+    }
+
+    item {
+      label: _("_Help");
+      action: "app.help";
+    }
+
+    item {
+      label: _("_About Hexkudo");
+      action: "app.about";
+    }
+  }
+}
+
+template $HexkudoMenuButton: Adw.Bin {
+  MenuButton {
+    icon-name: "open-menu-symbolic";
+    primary: true;
+    tooltip-text: _("Main Menu");
+
+    popover: PopoverMenu main_menu {
+      menu-model: primary-menu;
+
+      [zoom-out]
+      Button zoom_out_button {
+        icon-name: "zoom-out-symbolic";
+        action-name: "game-view.zoom-out";
+        tooltip-text: _("Zoom Out");
+
+        styles [
+          "flat",
+          "circular",
+        ]
+      }
+
+      [zoom-in]
+      Button zoom_in_button {
+        icon-name: "zoom-in-symbolic";
+        action-name: "game-view.zoom-in";
+        tooltip-text: _("Zoom In");
+
+        styles [
+          "flat",
+          "circular",
+        ]
+      }
+
+      [menu-fullscreen]
+      Stack menu_fullscreen_stack {
+        transition-type: crossfade;
+
+        Button menu_fullscreen_button {
+          icon-name: "view-fullscreen-symbolic";
+          action-name: "app.toggle-fullscreen";
+          tooltip-text: _("Fullscreen");
+
+          styles [
+            "flat",
+            "circular",
+          ]
+        }
+
+        Button menu_unfullscreen_button {
+          icon-name: "view-restore-symbolic";
+          action-name: "app.toggle-fullscreen";
+          tooltip-text: _("Leave Fullscreen");
+
+          styles [
+            "flat",
+            "circular",
+          ]
+        }
+      }
+    };
+  }
+}

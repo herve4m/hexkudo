@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2025 Hervé Quatremain
+
+  This file is part of Hexkudo.
+
+  Hexkudo is free software: you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+
+  Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with
+  Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<gresources>
+  <gresource prefix="/io/github/herve4m/Hexkudo">
+    <file preprocess="xml-stripblanks">ui/done_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/drawing_area.ui</file>
+    <file preprocess="xml-stripblanks">ui/game_view.ui</file>
+    <file preprocess="xml-stripblanks">ui/menu_button.ui</file>
+    <file preprocess="xml-stripblanks">ui/popover_number.ui</file>
+    <file preprocess="xml-stripblanks">ui/preferences_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/print_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/print_progress.ui</file>
+    <file preprocess="xml-stripblanks">ui/puzzle_list_item.ui</file>
+    <file preprocess="xml-stripblanks">ui/scores_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/scores_dialog_item.ui</file>
+    <file preprocess="xml-stripblanks">ui/select_puzzle_view.ui</file>
+    <file preprocess="xml-stripblanks">ui/start_view.ui</file>
+    <file preprocess="xml-stripblanks">ui/window.ui</file>
+    <file alias="style.css">media/css/style.css</file>
+    <file preprocess="xml-stripblanks" alias="shortcuts-dialog.ui">ui/shortcuts_dialog.ui</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/classic.svg">media/icons/classic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/heart.svg">media/icons/heart.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/square.svg">media/icons/square.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/random.svg">media/icons/random.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/error-symbolic.svg">media/icons/error-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/actions/trophy-symbolic.svg">media/icons/trophy-symbolic.svg</file>
+    <file alias="icons/128x128/actions/logo.png">media/icons/logo.png</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,304 @@
+/*
+preferences_dialog.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoPreferencesDialog: Adw.PreferencesDialog {
+  Adw.PreferencesPage {
+    title: _("General");
+    icon-name: "applications-system-symbolic";
+
+    Adw.PreferencesGroup {
+      title: C_("General Preferences", "Controls");
+
+      Adw.SwitchRow show_timer {
+        title: C_("General Preferences", "_Timer and Highscores");
+        subtitle: _("Show the timer during solving the puzzle");
+        use-underline: true;
+      }
+
+      Adw.SwitchRow show_errors {
+        title: C_("General Preferences", "Show Mistake _Counter");
+        subtitle: _("Show the number of incorrect inputs made during solving the puzzle");
+        use-underline: true;
+      }
+
+      Adw.SwitchRow draw_path {
+        title: C_("General Preferences", "Draw the _Path");
+        subtitle: _("Help you follow the path by drawing a line over the cells");
+        use-underline: true;
+      }
+
+      Adw.SwitchRow number_picker_second_click {
+        title: C_("General Preferences", "Number Picker on _Second Click");
+        subtitle: _("First click selects the cell, second click displays the number picker");
+        use-underline: true;
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: C_("General Preferences", "Warnings");
+
+      Adw.SwitchRow show_warnings {
+        title: C_("General Preferences", "Highlight _Wrong Values");
+        subtitle: _("Color the cells not matching the final solution");
+        use-underline: true;
+      }
+
+      Adw.SwitchRow show_duplicates {
+        title: C_("General Preferences", "Highlight _Duplicate Cells");
+        subtitle: _("Color the cells that have the same value");
+        use-underline: true;
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: C_("General Preferences", "Danger Zone");
+
+      Adw.ButtonRow delete_highscores {
+        title: C_("General Preferences", "_Reset High Score Boards...");
+        use-underline: true;
+        start-icon-name: "edit-clear-all-symbolic";
+
+        styles [
+          "destructive-action",
+        ]
+
+        activated => $reset_highscores() swapped;
+      }
+    }
+  }
+
+  Adw.PreferencesPage {
+    title: _("Appearance");
+    icon-name: "preferences-desktop-appearance-symbolic";
+
+    Adw.PreferencesGroup {
+      title: C_("Appearance Preferences", "Colors");
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for Cell _Values");
+        subtitle: _("Color of the numbers in the cells");
+        use-underline: true;
+        expanded: bind default_color_cell_values.active inverted bidirectional;
+
+        [action]
+        Switch default_color_cell_values {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_cell_values {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_cell_values() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for Cells with _Wrong Values");
+        subtitle: _("Color of the numbers in cells with wrong or duplicated values");
+        use-underline: true;
+        expanded: bind default_color_cell_wrong.active inverted bidirectional;
+
+        [action]
+        Switch default_color_cell_wrong {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_cell_wrong {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_cell_wrong() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for Cell _Background");
+        subtitle: _("Color of the cell background");
+        use-underline: true;
+        expanded: bind default_color_cell_bg.active inverted bidirectional;
+
+        [action]
+        Switch default_color_cell_bg {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_cell_bg {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_cell_bg() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Background Color for _Hints");
+        subtitle: _("Background color of the cells that provide hints");
+        use-underline: true;
+        expanded: bind default_color_cell_hint_bg.active inverted bidirectional;
+
+        [action]
+        Switch default_color_cell_hint_bg {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_cell_hint_bg {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_cell_hint_bg() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for the _Selected Cell Background");
+        subtitle: _("Background color of the selected cell");
+        use-underline: true;
+        expanded: bind default_color_sel_cell_bg.active inverted bidirectional;
+
+        [action]
+        Switch default_color_sel_cell_bg {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_sel_cell_bg {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_sel_cell_bg() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for Cell B_orders");
+        subtitle: _("Color of the diamonds and the cell borders");
+        use-underline: true;
+        expanded: bind default_color_cell_borders.active inverted bidirectional;
+
+        [action]
+        Switch default_color_cell_borders {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_cell_borders {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_cell_borders() swapped;
+          }
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: C_("Appearance Preferences", "Use Default Color for the _Path");
+        subtitle: _("Color of the path line over the cells");
+        use-underline: true;
+        expanded: bind default_color_path.active inverted bidirectional;
+
+        [action]
+        Switch default_color_path {
+          halign: end;
+          valign: center;
+        }
+
+        Adw.ActionRow {
+          title: C_("Appearance Preferences", "Custom Color");
+
+          [suffix]
+          ColorDialogButton color_path {
+            margin-top: 5;
+            margin-bottom: 5;
+
+            dialog: ColorDialog {};
+
+            notify::rgba => $on_color_path() swapped;
+          }
+        }
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: C_("General Preferences", "Appearance");
+
+      Adw.SwitchRow show_puzzle_bg {
+        title: C_("Appearance Preferences", "Show the Puzzle B_ackground");
+        subtitle: _("Show the colored background behind the puzzle");
+        use-underline: true;
+      }
+
+      Adw.SwitchRow sel_thick_border {
+        title: C_("General Preferences", "Use _Thick Borders for the Selected Cell");
+        subtitle: _("Make the selected cell more visible by using a thick border");
+        use-underline: true;
+      }
+    }
+  }
+}

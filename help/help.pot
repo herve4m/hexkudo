@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-01 15:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: credit/years
+#: ../help/C/basics.page:11
+#: ../help/C/checkpoints.page:11
+#: ../help/C/colors.page:11
+#: ../help/C/errors.page:11
+#: ../help/C/highlight-errors.page:11
+#: ../help/C/highscores.page:11
+#: ../help/C/index.page:17
+#: ../help/C/print-blank-puzzles.page:11
+#: ../help/C/print-inprogress-game.page:11
+#: ../help/C/save-resume.page:11
+#: ../help/C/solve.page:11
+#: ../help/C/time.page:11
+msgid "2025"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/basics.page:22
+msgid "Choose a puzzle and start playing."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/basics.page:25
+msgid "Basics"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/basics.page:27
+msgid "To play <app>Hexkudo</app>, start by selecting a difficulty level and a puzzle shape. You can play <app>Hexkudo</app> with the keyboard, the mouse, or a combination of the two."
+msgstr ""
+
+#. (itstool) path: section/title
+#: ../help/C/basics.page:33
+msgid "Choosing a Puzzle"
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:35
+msgid "To start a game, the first step consists of selecting a difficulty level between Easy, Medium, and Hard."
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:36
+msgid "The next step consists of selecting a puzzle shape. With the Random option, <app>Hexkudo</app> randomly selects a shape for you."
+msgstr ""
+
+#. (itstool) path: section/title
+#: ../help/C/basics.page:43
+msgid "Using the Keyboard and the Mouse"
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:45
+msgid "You can use the keyboard to play <app>Hexkudo</app>:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:48
+msgid "Select a cell by using the arrow or the <key>Tab</key> keys."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:49
+msgid "To enter a number, select the cell and type the number."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:50
+msgid "To remove a number, select the cell and press <key>Delete</key>."
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:53
+msgid "You can also use the mouse:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:56
+msgid "Select a cell by clicking it with the mouse."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:58
+msgid "Click the number to add to the cell. Numbers that you already entered are displayed in blue in the number picker."
+msgstr ""
+
+#. (itstool) path: item/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: ../help/C/basics.page:62
+msgctxt "_"
+msgid "external ref='figures/select-number.png' md5='e7f1bc75537a7dfd121b02eb7c26e635'"
+msgstr ""
+
+#. (itstool) path: media/p
+#: ../help/C/basics.page:63
+msgid "Selecting a number"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:66
+msgid "To remove a number, click the cell and click <gui style=\"button\">Clear</gui>."
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:69
+msgid "You can also draw the path with the mouse:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:71
+msgid "Click a cell that already has a number and hold the mouse button."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:72
+msgid "Drag the mouse to an adjacent cell: this new cell gets the next number."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/basics.page:73
+msgid "Continue dragging the mouse along the path to complete the puzzle."
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:76
+msgid "You can perform this drag motion with the left button to draw the path in the ascending number order."
+msgstr ""
+
+#. (itstool) path: section/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: ../help/C/basics.page:77
+msgctxt "_"
+msgid "external ref='figures/drag-up.png' md5='05835193345d1bd3ac99281ae845ee19'"
+msgstr ""
+
+#. (itstool) path: media/p
+#: ../help/C/basics.page:78
+msgid "Drawing the path with the left mouse button"
+msgstr ""
+
+#. (itstool) path: section/p
+#: ../help/C/basics.page:81
+msgid "Use the right button to draw the path in the descending number order."
+msgstr ""
+
+#. (itstool) path: section/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: ../help/C/basics.page:82
+msgctxt "_"
+msgid "external ref='figures/drag-down.png' md5='124a91d675c6fb2c4f6f34843047fb5d'"
+msgstr ""
+
+#. (itstool) path: media/p
+#: ../help/C/basics.page:83
+msgid "Drawing the path with the right mouse button"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/checkpoints.page:22
+msgid "Set and undo checkpoints."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/checkpoints.page:25
+msgid "Setting Checkpoints"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/checkpoints.page:27
+msgid "You can save the current state of the puzzle, and return to that known state later."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/checkpoints.page:29
+msgid "To set a checkpoint, click the menu button (<_:media-1/>) and select <gui style=\"menuitem\">Set Checkpoint</gui>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/checkpoints.page:31
+msgid "To go back to the state of the puzzle at the time of the checkpoint, click the menu button (<_:media-1/>), select <gui style=\"menuitem\">Undo to Last Checkpoint</gui>, and confirm the operation."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/checkpoints.page:33
+msgid "You can take several checkpoints while solving the puzzle. The undo function reverts to the latest checkpoint, and discards this checkpoint. For example, consider that you set three checkpoints, A, B, and C, in this order:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/checkpoints.page:40
+msgid "The first undo operation reverts to the puzzle state at the C checkpoint and discards this C checkpoint."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/checkpoints.page:41
+msgid "Another undo reverts to the B checkpoint and discards the B checkpoint."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/checkpoints.page:42
+msgid "Yet another undo reverts to the A checkpoint and discards this last checkpoint."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/checkpoints.page:45
+msgid "You can also discard all your work and start over by clicking the menu button (<_:media-1/>) and selecting <gui style=\"menuitem\">Reset Puzzle</gui>."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/colors.page:22
+msgid "Change the colors of the puzzle."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/colors.page:25
+msgid "Customizing Colors"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/colors.page:31
+msgid "You can adjust the color of the <app>Hexkudo</app> puzzle to your liking. Each individual component of a puzzle can have a custom color:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:41
+msgid "The numbers in cells."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:42
+msgid "The numbers for wrong or duplicated cells."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:43
+msgid "The background of the cells."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:44
+msgid "The background of the cells that provide hints at the beginning of the game."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:45
+msgid "The background of the currently selected cell."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:46
+msgid "The borders of cells and the diamonds."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:47
+msgid "The path."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:48
+msgid "The puzzle background can be hidden."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/colors.page:51
+msgid "You select a custom color for a component as follows:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:54
+#: ../help/C/errors.page:38
+#: ../help/C/highlight-errors.page:37
+#: ../help/C/print-blank-puzzles.page:30
+#: ../help/C/print-inprogress-game.page:30
+#: ../help/C/time.page:41
+msgid "Click the menu button (<_:media-1/>)."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:55
+msgid "Go to <gui style=\"menuitem\">Preferences</gui> and go to the <gui style=\"group\">Appearance</gui> section."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:57
+msgid "Clear the checkbox for the component for which you want to change the color. When the checkbox is enabled, <app>Hexkudo</app> uses the default color. When the checkbox is cleared, you can select the color."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:63
+msgid "To hide the puzzle background, clear the <gui style=\"button\">Show the Puzzle Background</gui> checkbox."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:64
+msgid "To make the selected cell more visible, enable the <gui style=\"button\">Use Thick Borders for the Selected Cell</gui> checkbox."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/colors.page:65
+msgid "Close the <gui>Preferences</gui> dialog."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/errors.page:22
+msgid "Display the number of errors."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/errors.page:25
+msgid "Showing the Mistake Counter"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/errors.page:31
+msgid "<app>Hexkudo</app> can display a counter that shows the number of mistakes."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/errors.page:33
+msgid "Because you can mistakenly select the wrong cell, <app>Hexkudo</app> gives you three seconds to correct your error before recording the mistake."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/errors.page:35
+msgid "You can hide or show the counter:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/errors.page:39
+#: ../help/C/highlight-errors.page:38
+#: ../help/C/time.page:42
+msgid "Go to <gui style=\"menuitem\">Preferences</gui>."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/errors.page:40
+msgid "In the <gui style=\"group\">General</gui> section, select the <gui style=\"button\">Show Mistake Counter</gui> checkbox."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/highlight-errors.page:22
+msgid "Highlight cells with errors."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/highlight-errors.page:25
+msgid "Displaying Errors"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/highlight-errors.page:31
+msgid "<app>Hexkudo</app> helps you identify your errors by displaying cell numbers in red. For a more challenging game, you can disable this feature:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/highlight-errors.page:39
+msgid "In the <gui style=\"group\">Warnings</gui> section, clear the <gui style=\"button\">Highlighting Wrong Values</gui> checkbox for preventing <app>Hexkudo</app> from showing you the cells with wrong values."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/highlight-errors.page:40
+msgid "Clear the <gui style=\"button\">Highlighting Duplicate Cells</gui> checkbox for preventing <app>Hexkudo</app> from showing you when several cells have the same value."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/highlight-errors.page:47
+msgid "You can temporarily switch between showing or hiding errors by using the <keyseq><key>Ctrl</key><key>E</key></keyseq> shortcut. For duplicated cells, use the <keyseq><key>Ctrl</key><key>D</key></keyseq> shortcut."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/highscores.page:22
+msgid "Display the high score board."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/highscores.page:25
+msgid "Viewing High Scores"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/highscores.page:31
+msgid "<app>Hexkudo</app> saves the 10 best times for each puzzle. For accessing the high score boards, click the menu button (<_:media-1/>) and select <gui style=\"menuitem\">Scores</gui>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/highscores.page:36
+msgid "The menu at the top of the high score window enables you to select puzzles."
+msgstr ""
+
+#. (itstool) path: note/p
+#: ../help/C/highscores.page:39
+msgid "Your time is added to the score board only when the <link xref=\"time\">timer</link> is enabled."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/highscores.page:42
+msgid "You can reset all the score boards, and loose all your scores, by going to the <gui style=\"menuitem\">Preferences</gui> dialog and clicking <gui style=\"button\">Reset High Score Boards</gui>."
+msgstr ""
+
+#. (itstool) path: info/title
+#: ../help/C/index.page:7
+msgctxt "link:trail"
+msgid "Hexkudo"
+msgstr ""
+
+#. (itstool) path: info/title
+#: ../help/C/index.page:8
+msgctxt "link"
+msgid "Hexkudo"
+msgstr ""
+
+#. (itstool) path: info/title
+#: ../help/C/index.page:9
+msgctxt "text"
+msgid "Hexkudo"
+msgstr ""
+
+#. (itstool) path: info/keywords
+#: ../help/C/index.page:11
+msgid "rikudo, sudoku"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/index.page:29
+msgid "Learn how to play <app>Hexkudo</app>."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/index.page:32
+msgid "<_:media-1/> Hexkudo"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/index.page:37
+msgid "<app>Hexkudo</app> is number-placement logic game. Each puzzle gives you a grid of hexagons and a few numbers as anchor. You job is to form a path with consecutive numbers. There is only one possible path, which must go through all the cells. Consecutive numbers must be adjacent and the diamond shape between two cells is a hint: the two cells have consecutive numbers."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/index.page:45
+msgid "Play the game on screen, or <link xref=\"index#print\">print</link> the puzzles."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/index.page:46
+msgid "If you do not have time to finish a game, you can <link xref=\"save-resume\">resume</link> it at any time."
+msgstr ""
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: ../help/C/index.page:48
+msgctxt "_"
+msgid "external ref='figures/hexkudo.png' md5='b9233ed215a14801535c2d906d277129'"
+msgstr ""
+
+#. (itstool) path: media/p
+#: ../help/C/index.page:49
+msgid "Solving an <app>Hexkudo</app> puzzle"
+msgstr ""
+
+#. (itstool) path: section/title
+#: ../help/C/index.page:53
+msgid "Game Play"
+msgstr ""
+
+#. (itstool) path: section/title
+#: ../help/C/index.page:57
+msgid "Preferences and Customizations"
+msgstr ""
+
+#. (itstool) path: section/title
+#: ../help/C/index.page:61
+msgid "Printing"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/print-blank-puzzles.page:22
+msgid "Print blank puzzles."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/print-blank-puzzles.page:25
+msgid "Printing Blank Hexkudo Puzzles"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/print-blank-puzzles.page:27
+msgid "You can print blank puzzles."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:31
+msgid "Go to <gui style=\"menuitem\">Print</gui> and select <gui style=\"menuitem\">Print Multiple Puzzles</gui>."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:32
+msgid "Set the total number of puzzles to print."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:33
+msgid "Set the number of puzzles to print per page."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:34
+msgid "Specify whether to print the puzzle solutions as additional pages at the end."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:35
+msgid "Select the puzzle to print and its difficulty level."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-blank-puzzles.page:36
+msgid "Click <gui style=\"button\">Print</gui>."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/print-inprogress-game.page:22
+msgid "Print the current puzzle."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/print-inprogress-game.page:25
+msgid "Printing Your Game"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/print-inprogress-game.page:27
+msgid "You can print the <app>Hexkudo</app> puzzle that you are currently playing."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-inprogress-game.page:31
+msgid "Go to <gui style=\"menuitem\">Print</gui> and select <gui style=\"menuitem\">Print Current Puzzle</gui>."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-inprogress-game.page:32
+msgid "Select your printer."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/print-inprogress-game.page:34
+msgid "Click <gui style=\"button\">Print</gui>. The puzzle is printed on two pages. The first page contains the unsolved puzzle, and the second page its solution."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/save-resume.page:22
+msgid "Save and resume the current game."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/save-resume.page:25
+msgid "Saving and Resuming"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/save-resume.page:27
+msgid "Your game is saved automatically when you close the application, and it is opened when your restart <app>Hexkudo</app>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/save-resume.page:28
+msgid "If you would like to stop playing that game and begin a new one, then click the menu button (<_:media-1/>), and select <gui style=\"menuitem\">New Game</gui>."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/solve.page:22
+msgid "Solve cells and puzzles."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/solve.page:25
+msgid "Getting Help Solving Puzzles"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/solve.page:27
+msgid "If you get stuck, then <app>Hexkudo</app> can help you by revealing the value of a cell of your choice. And if you decide to give up, then <app>Hexkudo</app> can reveal the whole puzzle."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/solve.page:32
+msgid "You can solve a cell:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/solve.page:35
+msgid "Select the cell with the mouse or the keyboard."
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/solve.page:36
+msgid "Click the menu button (<_:media-1/>) and select <gui style=\"menuitem\">Solve Current Cell</gui>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/solve.page:39
+msgid "You can also solve the whole puzzle by clicking the menu button (<_:media-1/>) and selecting <gui style=\"menuitem\">Solve Puzzle</gui>."
+msgstr ""
+
+#. (itstool) path: note/p
+#: ../help/C/solve.page:42
+msgid "When you ask <app>Hexkudo</app> to solve a cell or the puzzle, you forfeit recording you time in the high score board."
+msgstr ""
+
+#. (itstool) path: info/desc
+#: ../help/C/time.page:22
+msgid "How long it takes you to solve puzzles."
+msgstr ""
+
+#. (itstool) path: page/title
+#: ../help/C/time.page:25
+msgid "Timing Your Game"
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/time.page:31
+msgid "<app>Hexkudo</app> can display a timer to show how long it takes you to solve the puzzle. When you complete the puzzle, <app>Hexkudo</app> adds your time to the <link xref=\"highscores\">high score</link> board."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/time.page:36
+msgid "You can pause and resume the game by clicking on <gui style=\"button\">Pause</gui>, or by using the <key>P</key> keyboard shortcut."
+msgstr ""
+
+#. (itstool) path: page/p
+#: ../help/C/time.page:38
+msgid "You can also disable the timer:"
+msgstr ""
+
+#. (itstool) path: item/p
+#: ../help/C/time.page:43
+msgid "In the <gui style=\"group\">General</gui> section, clear the <gui style=\"button\">Timer and Highscores</gui> checkbox."
+msgstr ""

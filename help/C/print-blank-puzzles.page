@@ -1,0 +1,38 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="topic"
+      id="print-blank-puzzles">
+
+  <info>
+    <link type="guide" xref="index#print"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Print blank puzzles.</desc>
+  </info>
+
+  <title>Printing Blank Hexkudo Puzzles</title>
+
+  <p>You can print blank puzzles.</p>
+
+  <steps>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>).</p></item>
+    <item><p>Go to <gui style="menuitem">Print</gui> and select <gui style="menuitem">Print Multiple Puzzles</gui>.</p></item>
+    <item><p>Set the total number of puzzles to print.</p></item>
+    <item><p>Set the number of puzzles to print per page.</p></item>
+    <item><p>Specify whether to print the puzzle solutions as additional pages at the end.</p></item>
+    <item><p>Select the puzzle to print and its difficulty level.</p></item>
+    <item><p>Click <gui style="button">Print</gui>.</p></item>
+  </steps>
+</page>

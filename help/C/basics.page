@@ -1,0 +1,86 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="basics">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Choose a puzzle and start playing.</desc>
+  </info>
+
+  <title>Basics</title>
+
+  <p>
+    To play <app>Hexkudo</app>, start by selecting a difficulty level and a puzzle shape.
+    You can play <app>Hexkudo</app> with the keyboard, the mouse, or a combination of the two.
+  </p>
+
+  <section id="select">
+    <title>Choosing a Puzzle</title>
+
+    <p>To start a game, the first step consists of selecting a difficulty level between Easy, Medium, and Hard.</p>
+    <p>
+      The next step consists of selecting a puzzle shape.
+      With the Random option, <app>Hexkudo</app> randomly selects a shape for you.
+    </p>
+  </section>
+
+  <section id="keyboard-mouse">
+    <title>Using the Keyboard and the Mouse</title>
+
+    <p>You can use the keyboard to play <app>Hexkudo</app>:</p>
+
+    <list>
+      <item><p>Select a cell by using the arrow or the <key>Tab</key> keys.</p></item>
+      <item><p>To enter a number, select the cell and type the number.</p></item>
+      <item><p>To remove a number, select the cell and press <key>Delete</key>.</p></item>
+    </list>
+
+    <p>You can also use the mouse:</p>
+
+    <list>
+      <item><p>Select a cell by clicking it with the mouse.</p></item>
+      <item>
+        <p>
+          Click the number to add to the cell.
+          Numbers that you already entered are displayed in blue in the number picker.
+        </p>
+        <media type="image" src="figures/select-number.png">
+          <p>Selecting a number</p>
+        </media>
+      </item>
+      <item><p>To remove a number, click the cell and click <gui style="button">Clear</gui>.</p></item>
+    </list>
+
+    <p>You can also draw the path with the mouse:</p>
+    <list>
+      <item><p>Click a cell that already has a number and hold the mouse button.</p></item>
+      <item><p>Drag the mouse to an adjacent cell: this new cell gets the next number.</p></item>
+      <item><p>Continue dragging the mouse along the path to complete the puzzle.</p></item>
+    </list>
+
+    <p>You can perform this drag motion with the left button to draw the path in the ascending number order.</p>
+    <media type="image" src="figures/drag-up.png">
+      <p>Drawing the path with the left mouse button</p>
+    </media>
+
+    <p>Use the right button to draw the path in the descending number order.</p>
+    <media type="image" src="figures/drag-down.png">
+      <p>Drawing the path with the right mouse button</p>
+    </media>
+  </section>
+</page>

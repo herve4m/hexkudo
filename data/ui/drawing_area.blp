@@ -1,0 +1,56 @@
+/*
+drawing_area.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+
+template $HexkudoDrawingArea: DrawingArea {
+    focusable: true;
+    sensitive: false;
+
+    $HexkudoPopoverNumber popover_number {}
+
+    GestureDrag {
+        button: 0;
+        drag-begin => $drag_begin_cb() swapped;
+        drag-update => $drag_update_cb() swapped;
+        drag-end => $drag_end_cb() swapped;
+    }
+
+    EventControllerKey keyboard {
+        key-pressed => $key_pressed_cb() swapped;
+    }
+
+    EventControllerFocus focus {
+        leave => $focus_leave_cb() swapped;
+    }
+
+    notify::show-warnings => $refresh_cb() swapped;
+    notify::show-duplicates => $refresh_cb() swapped;
+    notify::draw-path => $refresh_cb() swapped;
+    notify::use-default-color-cell-values => $use_default_color_cell_values_cb() swapped;
+    notify::use-default-color-cell-wrong => $use_default_color_cell_wrong_cb() swapped;
+    notify::use-default-color-bg => $use_default_color_bg_cb() swapped;
+    notify::use-default-color-hint-bg => $use_default_color_hint_bg_cb() swapped;
+    notify::use-default-sel-color-bg => $use_default_sel_color_bg_cb() swapped;
+    notify::use-default-color-borders => $use_default_color_borders_cb() swapped;
+    notify::use-default-color-path => $use_default_color_path_cb() swapped;
+    notify::sel-thick-border => $sel_thick_border_cb() swapped;
+}

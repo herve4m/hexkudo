@@ -1,0 +1,70 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="colors">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Change the colors of the puzzle.</desc>
+  </info>
+
+  <title>Customizing Colors</title>
+
+  <media its:translate="no" type="image" src="figures/colors.png">
+    <p>Changing colors</p>
+  </media>
+
+  <p>
+    You can adjust the color of the <app>Hexkudo</app> puzzle to your liking.
+    Each individual component of a puzzle can have a custom color:
+  </p>
+
+  <media its:translate="no" type="image" src="figures/colors-callouts.png">
+    <p>Puzzle components that can be customized</p>
+  </media>
+
+  <list type="numbered">
+    <item><p>The numbers in cells.</p></item>
+    <item><p>The numbers for wrong or duplicated cells.</p></item>
+    <item><p>The background of the cells.</p></item>
+    <item><p>The background of the cells that provide hints at the beginning of the game.</p></item>
+    <item><p>The background of the currently selected cell.</p></item>
+    <item><p>The borders of cells and the diamonds.</p></item>
+    <item><p>The path.</p></item>
+    <item><p>The puzzle background can be hidden.</p></item>
+  </list>
+
+  <p>You select a custom color for a component as follows:</p>
+
+  <steps>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>).</p></item>
+    <item><p>Go to <gui style="menuitem">Preferences</gui> and go to the <gui style="group">Appearance</gui> section.</p></item>
+    <item>
+      <p>
+        Clear the checkbox for the component for which you want to change the color.
+        When the checkbox is enabled, <app>Hexkudo</app> uses the default color.
+        When the checkbox is cleared, you can select the color.
+      </p>
+    </item>
+    <item><p>To hide the puzzle background, clear the <gui style="button">Show the Puzzle Background</gui> checkbox.</p></item>
+    <item><p>To make the selected cell more visible, enable the <gui style="button">Use Thick Borders for the Selected Cell</gui> checkbox.</p></item>
+    <item><p>Close the <gui>Preferences</gui> dialog.</p></item>
+  </steps>
+
+
+
+</page>

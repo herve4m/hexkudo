@@ -1,0 +1,63 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="index">
+
+  <info>
+    <title type="link" role="trail">Hexkudo</title>
+    <title type="link">Hexkudo</title>
+    <title type="text">Hexkudo</title>
+
+    <keywords>rikudo, sudoku</keywords>
+
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+
+    <desc>Learn how to play <app>Hexkudo</app>.</desc>
+  </info>
+
+  <title>
+    <media its:translate="no" type="image" width="48px" height="48px" src="figures/io.github.herve4m.Hexkudo.svg"/>
+    Hexkudo
+  </title>
+
+  <p>
+    <app>Hexkudo</app> is number-placement logic game.
+    Each puzzle gives you a grid of hexagons and a few numbers as anchor.
+    You job is to form a path with consecutive numbers.
+    There is only one possible path, which must go through all the cells.
+    Consecutive numbers must be adjacent and the diamond shape between two cells is a hint: the two cells have consecutive numbers.
+  </p>
+
+  <p>Play the game on screen, or <link xref="index#print">print</link> the puzzles.</p>
+  <p>If you do not have time to finish a game, you can <link xref="save-resume">resume</link> it at any time.</p>
+
+  <media type="image" src="figures/hexkudo.png">
+    <p>Solving an <app>Hexkudo</app> puzzle</p>
+  </media>
+
+  <section id="play" style="2column">
+    <title>Game Play</title>
+  </section>
+
+  <section id="preferences" style="2column">
+    <title>Preferences and Customizations</title>
+  </section>
+
+  <section id="print" style="2column">
+    <title>Printing</title>
+  </section>
+</page>

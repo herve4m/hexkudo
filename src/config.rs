@@ -1,0 +1,34 @@
+/*
+config.rs
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+
+//! Configuration options.
+
+pub const VERSION: &str = "0.1.0";
+pub const GETTEXT_PACKAGE: &str = "hexkudo";
+pub const LOCALEDIR: &str = "/usr/local/share/locale";
+pub const PKGDATADIR: &str = "/usr/local/share/hexkudo";
+pub const APPLICATION_ID: &str = "io.github.herve4m.Hexkudo";
+pub const COPYRIGHT_NOTICE: &str = "0.1.0
+Copyright (C) 2025 Hervé Quatremain
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.";

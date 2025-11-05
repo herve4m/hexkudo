@@ -1,0 +1,1008 @@
+# French translation of Hexkudo.
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the hexkudo package.
+#
+# Hervé Quatremain, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hexkudo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-01 08:24+0100\n"
+"PO-Revision-Date: 2025-11-01 08:24+0100\n"
+"Last-Translator: Hervé Quatremain\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: data/io.github.herve4m.Hexkudo.desktop.in.in:2
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:7 data/ui/game_view.blp:39
+#: data/ui/select_puzzle_view.blp:36 data/ui/start_view.blp:36
+#: data/ui/window.blp:28
+msgid "Hexkudo"
+msgstr "Hexkudo"
+
+#: data/io.github.herve4m.Hexkudo.desktop.in.in:3
+msgid "Logic game"
+msgstr "Jeu de logique"
+
+#: data/io.github.herve4m.Hexkudo.desktop.in.in:4
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:8
+msgid "Find your path in a maze of numbers"
+msgstr "Trouver son chemin dans un labyrinthe de chiffres"
+
+#: data/io.github.herve4m.Hexkudo.desktop.in.in:10
+msgid "GTK;GNOME;sudoku;rikudo;puzzle;"
+msgstr ""
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:10
+msgid ""
+"Hexkudo is a number-placement logic game. Each puzzle gives you a grid of "
+"hexagons and a few numbers as anchor. Your job is to connect them into a "
+"continuous path that visits every cell exactly once, in numeric order. "
+"Hexkudo comes with a simple interface and several difficulty levels that "
+"make it fun for players of all skill level."
+msgstr ""
+"Hexkudo est un jeu de logique qui consiste à placer des chiffres dans une "
+"grille. Chaque jeu est constitué d’une grille d’hexagones et de quelques "
+"chiffres déjà placés. Votre but est de connecter les hexagones pour "
+"former un chemin continu qui traverse chaque hexagone une seule fois et "
+"dans l’ordre numérique. Hexkudo a une interface simple et plusieurs "
+"niveaux de difficulté qui rendent le jeu plaisant pour les joueurs de "
+"tous niveaux."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:16
+msgid "Features:"
+msgstr "Fonctionnalités :"
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:18
+msgid "Automatically save and restore your session."
+msgstr "Sauve et restore votre jeu automatiquement."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:19
+msgid "Generate random puzzles."
+msgstr "Génère des puzzles aléatoirement."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:20
+msgid "Use the mouse or the keyboard to complete the puzzles."
+msgstr "Fonctionne avec la souris ou le clavier."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:21
+msgid "Get help with the built-in warnings."
+msgstr "Système d’avertissements en cas d’erreurs."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:22
+msgid ""
+"Keep track of your progression with highscores, number of mistakes, and a "
+"timer."
+msgstr ""
+"Gère vos progrés avec un tableau des scores, le nombre "
+"d’erreurs, et un chronomètre."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:23
+msgid "Customize the colors."
+msgstr "Personnalisation des couleurs."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:24
+msgid "Print puzzles to play Hexkudo on the go."
+msgstr "Impression de puzzles pour jouer dans les transports."
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:50
+msgid "An Hexkudo game"
+msgstr "Un jeu d’Hexkudo"
+
+#: data/io.github.herve4m.Hexkudo.metainfo.xml.in.in:54
+msgid "An Hexkudo game in dark mode"
+msgstr "Un jeu d’Hexkudo en mode sombre"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:35
+msgid "Puzzle difficulty"
+msgstr "Difficulté"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:36
+msgid "Difficulty level of the puzzle to resolve."
+msgstr "Niveau de difficulté du puzzle à résoudre."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:40
+msgid "Puzzle name"
+msgstr "Nom du puzzle"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:41
+msgid "Name of the puzzle."
+msgstr "Nom du puzzle."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:45
+msgid "Zoom level"
+msgstr "Niveau de zoom"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:46
+msgid "Size of the numbers in the puzzle cells."
+msgstr "Taille des nombres dans les cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:50
+msgid "Difficulty of the puzzles to print"
+msgstr "Difficulté des puzzles à imprimer"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:51
+msgid "Difficulty level of the puzzles to print."
+msgstr "Niveau de difficulté des puzzles à imprimer."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:55
+msgid "Name of the puzzles to print"
+msgstr "Nom du puzzle à imprimer"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:56
+msgid "Name of the puzzle you want to print."
+msgstr "Nom du puzzle que vous voulez imprimer."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:60
+msgid "Print puzzle solution"
+msgstr "Imprime la solution du puzzle"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:61
+msgid "Whether to print the puzzle solution as well."
+msgstr "Imprimer également ou non la solution du puzzle."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:66
+msgid "Number of puzzles to print"
+msgstr "Nombre de puzzles à imprimer"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:67
+msgid "Total number of puzzles you want to print."
+msgstr "Nombre total de puzzles que vous voulez imprimer."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:72
+msgid "Number of puzzles to print per page"
+msgstr "Nombre de puzzles à imprimer par page"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:73
+msgid "Number of puzzles you want to print per page."
+msgstr "Nombre de puzzles que vous voulez imprimer sur chaque page."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:77
+msgid "Width of the window in pixels"
+msgstr "Largeur de la fenêtre en pixels"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:81
+msgid "Height of the window in pixels"
+msgstr "Hauteur de la fenêtre en pixels"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:85
+msgid "true if the window is maximized"
+msgstr "Vrai si la fenêtre a la taille maximale"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:89
+msgid "true if the window is fullscreen"
+msgstr "Vrai si la fenêtre est en mode plein écran"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:93
+msgid "Show the error counter"
+msgstr "Affiche le compteur d’erreurs"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:94
+msgid "Show the number of errors during solving the puzzle."
+msgstr "Afficher le compteur d’erreurs pendant la résolution du puzzle."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:98
+msgid "Show the timer"
+msgstr "Affiche le chronomètre"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:99
+msgid "Show the timer during solving the puzzle."
+msgstr "Afficher le chronomètre pendant la résolution du puzzle."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:103
+msgid "Highlight mistakes"
+msgstr "Signale les erreurs"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:104
+msgid "Highlight cells with wrong values."
+msgstr "Signaler les cases qui n’ont pas la bonne valeur."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:108
+msgid "Highlight duplicated cells"
+msgstr "Signale les doublons"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:109
+msgid "Highlight cells that have the same value."
+msgstr "Signaler les cases qui ont la même valeur."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:113
+msgid "Draw a line over the path"
+msgstr "Dessine une ligne au dessus du chemin"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:117
+msgid "Display the number picker on second click"
+msgstr "Affiche le menu de sélection des chiffres après un second click"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:118
+msgid ""
+"When true, the first click selects the cell and the second click shows the "
+"number picker popup."
+msgstr ""
+"Si vrai, le premier click sélectionne la case et le second click "
+"affiche le menu de sélection des chiffres."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:122
+msgid "Use the default color for cell values"
+msgstr "Utilise la couleur par défaut pour les chiffres"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:123
+msgid "Whether to use the puzzle default color for the cell numbers."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour les chiffres dans les "
+"cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:127
+msgid "Color of the cell values"
+msgstr "Couleur des chiffres"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:128
+msgid "Color (red, green, blue, alpha) of the cell numbers."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) des chiffres dans les "
+"cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:132
+msgid "Use the default color for cell with wrong values"
+msgstr "Utilise la couleur par défaut pour les chiffres erronés"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:133
+msgid ""
+"Whether to use the puzzle default color for the numbers in duplicated or "
+"cells in error."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour les chiffres erronés ou "
+"en double dans les cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:137
+msgid "Color of the cell values for cells in error"
+msgstr "Couleur des chiffres pour les cases en erreur"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:138
+msgid ""
+"Color (red, green, blue, alpha) of the cell numbers for duplicated or cells "
+"in error."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) des chiffres erronés ou "
+"en double dans les cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:142
+msgid "Use the default color for cell background"
+msgstr "Utilise la couleur de fond par défaut pour les cases"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:143
+msgid "Whether to use the puzzle default color for cell background."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour la couleur de fond des "
+"cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:147
+#: data/ui/preferences_dialog.blp:154
+msgid "Color of the cell background"
+msgstr "Couleur de fond des cases"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:148
+msgid "Color (red, green, blue, alpha) of the cell background."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) de fond "
+"des cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:152
+msgid "Use the default color for the background of hint cells"
+msgstr "Utilise la couleur de fond par défaut pour les nombre déjà placés"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:153
+msgid ""
+"Whether to use the puzzle default background color for cells that provide "
+"hints."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour la couleur de fond des "
+"cases qui fournissent un indice."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:157
+msgid "Background color of the hint cells"
+msgstr "Couleur de fond des indices"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:158
+msgid ""
+"Background color (red, green, blue, alpha) for the cells that provide hints."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) de fond des cases "
+"qui fournissent les indices."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:162
+msgid "Use the default color for the selected cell background"
+msgstr "Utilise la couleur de fond par défaut pour la case sélectionnée"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:163
+msgid ""
+"Whether to use the puzzle default color for the background of the selected "
+"cell."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour la couleur de fond de "
+"la case sélectionnée."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:167
+#: data/ui/preferences_dialog.blp:208
+msgid "Background color of the selected cell"
+msgstr "Couleur de fond de la case sélectionnée"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:168
+msgid "Color (red, green, blue, alpha) of the selected cell background."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) de fond de la case "
+"sélectionnée."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:172
+msgid "Use the default color for cell borders"
+msgstr "Utilise la couleur par défaut pour la bordure des cases"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:173
+msgid ""
+"Whether to use the puzzle default color for the cell borders and diamonds."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour la bordure des cases "
+"et les losanges."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:177
+msgid "Color of the cell borders"
+msgstr "Couleur de la bordure des cases"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:178
+msgid "Color (red, green, blue, alpha) of the cell borders and diamonds."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) de la bordure des cases "
+"et des losanges."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:182
+msgid "Use the default color for path"
+msgstr "Utilise la couleur par défaut pour le chemin"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:183
+msgid "Whether to use the puzzle default color for the path over the cells."
+msgstr ""
+"Utiliser ou non la couleur par défaut pour le chemin dessiné au dessus "
+"des cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:187
+msgid "Color of the path"
+msgstr "Couleur du chemin"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:188
+msgid "Color (red, green, blue, alpha) of the path over the cells."
+msgstr ""
+"Couleur (rouge, vert, bleu, transparence) du chemin dessiné "
+"au dessus des cases."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:192
+msgid "Show the puzzle background"
+msgstr "Affiche le fond derrière le puzzle"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:193
+msgid "Whether to display the colored background behind the puzzle."
+msgstr "Afficher ou non le fond coloré derrière le puzzle."
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:197
+msgid "Use thick borders for the selected cell"
+msgstr "Utilise une bordure épaisse pour la case sélectionnée"
+
+#: data/io.github.herve4m.Hexkudo.gschema.xml.in:198
+msgid "Whether to draw a thick border to make the selected cell more visible."
+msgstr "Dessiner ou non une bordure épaisse autour de la case sélectionnée "
+"pour le rendre plus visible."
+
+#: data/ui/done_dialog.blp:29 src/widgets/print_job.rs:148
+msgid "Close"
+msgstr "Fermer"
+
+#: data/ui/done_dialog.blp:30
+msgid "Play _Again"
+msgstr "_Rejouer"
+
+#: data/ui/done_dialog.blp:34
+msgid "High Scores"
+msgstr "Tableau des scores"
+
+#: data/ui/game_view.blp:49
+msgid "Undo Action"
+msgstr "Annule la dernière action"
+
+#: data/ui/game_view.blp:60
+msgid "Redo Action"
+msgstr "Rétablit la dernière action"
+
+#: data/ui/game_view.blp:89
+msgid "Pause"
+msgstr "Pause"
+
+#: data/ui/game_view.blp:98
+msgid "Play"
+msgstr "Jouer"
+
+#: data/ui/game_view.blp:110
+msgid "Mistake counter"
+msgstr "Compteur d’erreurs"
+
+#: data/ui/game_view.blp:134
+msgid "Timer"
+msgstr "Chronomètre"
+
+#: data/ui/game_view.blp:180
+msgid "Paused"
+msgstr "En pause"
+
+#: data/ui/game_view.blp:185
+msgid "Continue the game"
+msgstr "Poursuivre le jeu"
+
+#: data/ui/game_view.blp:187
+msgid "Resume"
+msgstr "Continuer"
+
+#: data/ui/menu_button.blp:30
+msgid "_New Game…"
+msgstr "_Nouvelle partie…"
+
+#: data/ui/menu_button.blp:35
+msgid "New _Game (Same Puzzle)"
+msgstr "Nouvelle _partie (même puzzle)"
+
+#: data/ui/menu_button.blp:40
+msgid "_Reset Puzzle"
+msgstr "_Réinitialiser le puzzle"
+
+#: data/ui/menu_button.blp:45
+msgid "_Scores"
+msgstr "_Scores"
+
+#: data/ui/menu_button.blp:52
+msgid "Prin_t"
+msgstr "_Imprimer"
+
+#: data/ui/menu_button.blp:56
+msgid "Print _Current Puzzle…"
+msgstr "Imprimer le jeu en _cours…"
+
+#: data/ui/menu_button.blp:61
+msgid "Print _Multiple Puzzles…"
+msgstr "Imprimer plusieurs _jeux…"
+
+#: data/ui/menu_button.blp:68
+msgid "Zoom"
+msgstr "Zoom"
+
+#: data/ui/menu_button.blp:87
+msgid "Set Checkp_oint"
+msgstr "Définir un p_oint d’étape"
+
+#: data/ui/menu_button.blp:92
+msgid "_Undo to Last Checkpoint…"
+msgstr "Rétablir le _dernier point d’étape…"
+
+#: data/ui/menu_button.blp:97
+msgid "Solve Current Ce_ll"
+msgstr "Résoudre _la case sélectionnée"
+
+#: data/ui/menu_button.blp:102
+msgid "Solve Pu_zzle"
+msgstr "Rés_oudre le puzzle"
+
+#: data/ui/menu_button.blp:109
+msgid "_Preferences"
+msgstr "_Préférences"
+
+#: data/ui/menu_button.blp:114
+msgid "_Keyboard Shortcuts"
+msgstr "R_accourcis clavier"
+
+#: data/ui/menu_button.blp:119
+msgid "_Help"
+msgstr "Aid_e"
+
+#: data/ui/menu_button.blp:124
+msgid "_About Hexkudo"
+msgstr "À propos de _Hexkudo"
+
+#: data/ui/menu_button.blp:134
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: data/ui/menu_button.blp:143
+msgid "Zoom Out"
+msgstr "Dézoomer"
+
+#: data/ui/menu_button.blp:155
+msgid "Zoom In"
+msgstr "Zoomer"
+
+#: data/ui/menu_button.blp:170
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+#: data/ui/menu_button.blp:181
+msgid "Leave Fullscreen"
+msgstr "Quitter le plein écran"
+
+#: data/ui/preferences_dialog.blp:27
+msgid "General"
+msgstr "Général"
+
+#: data/ui/preferences_dialog.blp:31
+msgctxt "General Preferences"
+msgid "Controls"
+msgstr "Contrôles"
+
+#: data/ui/preferences_dialog.blp:34
+msgctxt "General Preferences"
+msgid "_Timer and Highscores"
+msgstr "Chronomètre et _tableau des scores"
+
+#: data/ui/preferences_dialog.blp:35
+msgid "Show the timer during solving the puzzle"
+msgstr "Affiche le chronomètre"
+
+#: data/ui/preferences_dialog.blp:40
+msgctxt "General Preferences"
+msgid "Show Mistake _Counter"
+msgstr "Affiche le _compteur d’erreurs"
+
+#: data/ui/preferences_dialog.blp:41
+msgid "Show the number of incorrect inputs made during solving the puzzle"
+msgstr "Indique le nombre d’erreurs pendant la résolution du jeu"
+
+#: data/ui/preferences_dialog.blp:46
+msgctxt "General Preferences"
+msgid "Draw the _Path"
+msgstr "Dessine le c_hemin"
+
+#: data/ui/preferences_dialog.blp:47
+msgid "Help you follow the path by drawing a line over the cells"
+msgstr "Vous aide à suivre le chemin en dessinant une ligne au dessus des cases"
+
+#: data/ui/preferences_dialog.blp:52
+msgctxt "General Preferences"
+msgid "Number Picker on _Second Click"
+msgstr "Sélection des nombres avec le _second click"
+
+#: data/ui/preferences_dialog.blp:53
+msgid "First click selects the cell, second click displays the number picker"
+msgstr "Un premier click sélectionne la case, un second click affiche le menu de sélection des nombres"
+
+#: data/ui/preferences_dialog.blp:59
+msgctxt "General Preferences"
+msgid "Warnings"
+msgstr "Alertes"
+
+#: data/ui/preferences_dialog.blp:62
+msgctxt "General Preferences"
+msgid "Highlight _Wrong Values"
+msgstr "Surligne les _valeurs erronées"
+
+#: data/ui/preferences_dialog.blp:63
+msgid "Color the cells not matching the final solution"
+msgstr "Colore les cases qui ne correspondent pas à la solution"
+
+#: data/ui/preferences_dialog.blp:68
+msgctxt "General Preferences"
+msgid "Highlight _Duplicate Cells"
+msgstr "Surligne les _doublons"
+
+#: data/ui/preferences_dialog.blp:69
+msgid "Color the cells that have the same value"
+msgstr "Colore les cases qui comportent des doublons"
+
+#: data/ui/preferences_dialog.blp:75
+msgctxt "General Preferences"
+msgid "Danger Zone"
+msgstr "Attention Danger"
+
+#: data/ui/preferences_dialog.blp:78
+msgctxt "General Preferences"
+msgid "_Reset High Score Boards..."
+msgstr "_Réinitialise le tableau des scores"
+
+#: data/ui/preferences_dialog.blp:92
+msgid "Appearance"
+msgstr "Apparence"
+
+#: data/ui/preferences_dialog.blp:96
+msgctxt "Appearance Preferences"
+msgid "Colors"
+msgstr "Couleurs"
+
+#: data/ui/preferences_dialog.blp:99
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for Cell _Values"
+msgstr "Utiliser la couleur par défaut pour les _valeurs des cases"
+
+#: data/ui/preferences_dialog.blp:100
+msgid "Color of the numbers in the cells"
+msgstr "Couleur des chiffres dans les cases"
+
+#: data/ui/preferences_dialog.blp:111 data/ui/preferences_dialog.blp:138
+#: data/ui/preferences_dialog.blp:165 data/ui/preferences_dialog.blp:192
+#: data/ui/preferences_dialog.blp:219 data/ui/preferences_dialog.blp:246
+#: data/ui/preferences_dialog.blp:273
+msgctxt "Appearance Preferences"
+msgid "Custom Color"
+msgstr "Couleur personnalisée"
+
+#: data/ui/preferences_dialog.blp:126
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for Cells with _Wrong Values"
+msgstr "Utilis_er la couleur par défaut pour les cases aux valeurs incorrectes"
+
+#: data/ui/preferences_dialog.blp:127
+msgid "Color of the numbers in cells with wrong or duplicated values"
+msgstr "Couleur des chiffres dans les cases avec des valeurs incorrectes ou dupliquées"
+
+#: data/ui/preferences_dialog.blp:153
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for Cell _Background"
+msgstr "Utiliser la couleur par défaut pour l’_arrière-plan des cases"
+
+#: data/ui/preferences_dialog.blp:180
+msgctxt "Appearance Preferences"
+msgid "Use Default Background Color for _Hints"
+msgstr "Utiliser la couleur d’arrière-plan par défaut pour les _indices"
+
+#: data/ui/preferences_dialog.blp:181
+msgid "Background color of the cells that provide hints"
+msgstr "Couleur d’arrière-plan des cases fournissant des indices"
+
+#: data/ui/preferences_dialog.blp:207
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for the _Selected Cell Background"
+msgstr "Utiliser la couleur par défaut pour l’arrière-plan de la case _sélectionné"
+
+#: data/ui/preferences_dialog.blp:234
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for Cell B_orders"
+msgstr "Utiliser la couleur par défaut pour les b_ordures des cases"
+
+#: data/ui/preferences_dialog.blp:235
+msgid "Color of the diamonds and the cell borders"
+msgstr "Couleur des losanges et des bordures des cases"
+
+#: data/ui/preferences_dialog.blp:261
+msgctxt "Appearance Preferences"
+msgid "Use Default Color for the _Path"
+msgstr "Utiliser la couleur par défaut pour le _chemin"
+
+#: data/ui/preferences_dialog.blp:262
+msgid "Color of the path line over the cells"
+msgstr "Couleur du chemin au-dessus des cases"
+
+#: data/ui/preferences_dialog.blp:289
+msgctxt "General Preferences"
+msgid "Appearance"
+msgstr "Apparence"
+
+#: data/ui/preferences_dialog.blp:292
+msgctxt "Appearance Preferences"
+msgid "Show the Puzzle B_ackground"
+msgstr "Afficher l’arrière-plan du p_uzzle"
+
+#: data/ui/preferences_dialog.blp:293
+msgid "Show the colored background behind the puzzle"
+msgstr "Afficher l’arrière-plan coloré derrière le puzzle"
+
+#: data/ui/preferences_dialog.blp:298
+msgctxt "General Preferences"
+msgid "Use _Thick Borders for the Selected Cell"
+msgstr "Utiliser des _bordures épaisses pour la case sélectionné"
+
+#: data/ui/preferences_dialog.blp:299
+msgid "Make the selected cell more visible by using a thick border"
+msgstr "Rendre la case sélectionné plus visible en utilisant une bordure épaisse"
+
+#: data/ui/print_dialog.blp:28
+msgid "Print Multiple Puzzles"
+msgstr "Imprimer plusieurs puzzles"
+
+#: data/ui/print_dialog.blp:47
+msgid "Number of puzzles"
+msgstr "Nombre de puzzles"
+
+#: data/ui/print_dialog.blp:58
+msgid "Number of puzzles per page"
+msgstr "Nombre de puzzles par page"
+
+#: data/ui/print_dialog.blp:69
+msgid "Include solution"
+msgstr "Inclure la solution"
+
+#: data/ui/print_dialog.blp:73
+msgid "Puzzle"
+msgstr "Puzzle"
+
+#: data/ui/print_dialog.blp:85
+msgid "_Print"
+msgstr "Im_primer"
+
+#: data/ui/print_progress.blp:26
+msgid "Preparing Puzzles for Printing"
+msgstr "Préparation des puzzles pour l’impression"
+
+#: data/ui/scores_dialog.blp:42
+msgid "Play some games and your scores will show up here."
+msgstr "Jouez quelques parties et vos scores apparaîtront ici."
+
+#: data/ui/scores_dialog.blp:61
+msgid "Pos"
+msgstr "Pos"
+
+#: data/ui/scores_dialog.blp:70
+msgid "Time"
+msgstr "Temps"
+
+#: data/ui/scores_dialog.blp:80
+msgid "Errors"
+msgstr "Erreurs"
+
+#: data/ui/scores_dialog.blp:89
+msgid "Date/Time"
+msgstr "Date/Heure"
+
+#: data/ui/select_puzzle_view.blp:37 data/ui/select_puzzle_view.blp:72
+msgid "Select Puzzle"
+msgstr "Sélectionner un puzzle"
+
+#: data/ui/select_puzzle_view.blp:45
+msgid "Back"
+msgstr "Retour"
+
+#: data/ui/select_puzzle_view.blp:60
+msgid "_Start Game"
+msgstr "_Démarrer la partie"
+
+#: data/ui/shortcuts_dialog.blp:29
+msgctxt "Shortcuts Window"
+msgid "Game"
+msgstr "Partie"
+
+#: data/ui/shortcuts_dialog.blp:33 data/ui/shortcuts_dialog.blp:38
+msgctxt "Shortcuts Window"
+msgid "Move"
+msgstr "Déplacer"
+
+#: data/ui/shortcuts_dialog.blp:43
+msgctxt "Shortcuts Window"
+msgid "Clear Cell"
+msgstr "Effacer la valeur de la case"
+
+#: data/ui/shortcuts_dialog.blp:48
+msgctxt "Shortcuts Window"
+msgid "Number Picker"
+msgstr "Sélecteur de nombres"
+
+#: data/ui/shortcuts_dialog.blp:53
+msgctxt "Shortcuts Window"
+msgid "Undo"
+msgstr "Annuler"
+
+#: data/ui/shortcuts_dialog.blp:58
+msgctxt "Shortcuts Window"
+msgid "Redo"
+msgstr "Rétablir"
+
+#: data/ui/shortcuts_dialog.blp:63
+msgctxt "Shortcuts Window"
+msgid "Pause/Resume"
+msgstr "Pause/Reprendre"
+
+#: data/ui/shortcuts_dialog.blp:68
+msgctxt "Shortcuts Window"
+msgid "Set Checkpoint"
+msgstr "Définir un point d’étape"
+
+#: data/ui/shortcuts_dialog.blp:73
+msgctxt "Shortcuts Window"
+msgid "Solve Selected Cell"
+msgstr "Résoudre la case sélectionné"
+
+#: data/ui/shortcuts_dialog.blp:78
+msgctxt "Shortcuts Window"
+msgid "Show/Hide Errors"
+msgstr "Afficher/Masquer les erreurs"
+
+#: data/ui/shortcuts_dialog.blp:83
+msgctxt "Shortcuts Window"
+msgid "Show/Hide Duplicated Cells"
+msgstr "Afficher/Masquer les cases en double"
+
+#: data/ui/shortcuts_dialog.blp:88
+msgctxt "Shortcuts Window"
+msgid "New Game"
+msgstr "Nouvelle partie"
+
+#: data/ui/shortcuts_dialog.blp:93
+msgctxt "Shortcuts Window"
+msgid "Reset Puzzle"
+msgstr "Réinitialiser le puzzle"
+
+#: data/ui/shortcuts_dialog.blp:98
+msgctxt "Shortcuts Window"
+msgid "Window"
+msgstr "Fenêtre"
+
+#: data/ui/shortcuts_dialog.blp:102
+msgctxt "Shortcuts Window"
+msgid "Go Back"
+msgstr "Retourner"
+
+#: data/ui/shortcuts_dialog.blp:107
+msgctxt "Shortcuts Window"
+msgid "Zoom In"
+msgstr "Agrandir"
+
+#: data/ui/shortcuts_dialog.blp:112
+msgctxt "Shortcuts Window"
+msgid "Zoom Out"
+msgstr "Rétrécir"
+
+#: data/ui/shortcuts_dialog.blp:117
+msgctxt "Shortcuts Window"
+msgid "Print Current Puzzle"
+msgstr "Imprimer le puzzle en cours"
+
+#: data/ui/shortcuts_dialog.blp:122
+msgctxt "Shortcuts Window"
+msgid "Preferences"
+msgstr "Préférences"
+
+#: data/ui/shortcuts_dialog.blp:127
+msgctxt "Shortcuts Window"
+msgid "Keyboard Shortcuts"
+msgstr "Raccourcis clavier"
+
+#: data/ui/shortcuts_dialog.blp:132
+msgctxt "Shortcuts Window"
+msgid "Quit"
+msgstr "Quitter"
+
+#: data/ui/shortcuts_dialog.blp:137
+msgctxt "Shortcuts Window"
+msgid "Help"
+msgstr "Aide"
+
+#: data/ui/shortcuts_dialog.blp:142
+msgctxt "Shortcuts Window"
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+#: data/ui/start_view.blp:37
+msgid "Select Difficulty"
+msgstr "Sélectionner la difficulté"
+
+#: data/ui/start_view.blp:45
+msgid "Select Puzzle Difficulty"
+msgstr "Sélectionner la difficulté du puzzle"
+
+#: data/ui/start_view.blp:62
+msgctxt "Difficulty"
+msgid "_Easy"
+msgstr "_Facile"
+
+#: data/ui/start_view.blp:76
+msgctxt "Difficulty"
+msgid "_Medium"
+msgstr "_Moyen"
+
+#: data/ui/start_view.blp:89
+msgctxt "Difficulty"
+msgid "_Hard"
+msgstr "_Difficile"
+
+#: data/ui/start_view.blp:98
+msgid "_Select Puzzle"
+msgstr "_Sélectionner le puzzle"
+
+#. For developers: repeat your puzzle's name here. This way it will be translated.
+#: src/generator/puzzles/easy_classic_22.rs:179
+#: src/generator/puzzles/hard_classic_60.rs:112
+#: src/generator/puzzles/medium_classic_36.rs:110
+msgid "Classic"
+msgstr "Classique"
+
+#. For developers: repeat your puzzle's name here. This way it will be translated.
+#: src/generator/puzzles/easy_heart_24.rs:110
+#: src/generator/puzzles/hard_heart_58.rs:114
+#: src/generator/puzzles/medium_heart_45.rs:113
+msgid "Heart"
+msgstr "Cœur"
+
+#. For developers: repeat your puzzle's name here. This way it will be translated.
+#: src/generator/puzzles/easy_square_22.rs:108
+#: src/generator/puzzles/hard_square_60.rs:112
+#: src/generator/puzzles/medium_square_38.rs:110
+msgid "Square"
+msgstr "Carré"
+
+#: src/generator/puzzles.rs:73
+msgid "Easy"
+msgstr "Facile"
+
+#: src/generator/puzzles.rs:74
+msgid "Medium"
+msgstr "Moyen"
+
+#: src/generator/puzzles.rs:75
+msgid "Hard"
+msgstr "Difficile"
+
+#: src/widgets/puzzle_list_item.rs:94
+msgid "Random"
+msgstr "Aléatoire"
+
+#: src/widgets/done_dialog.rs:79
+msgid "The puzzle is solved!"
+msgstr "Le puzzle est résolu !"
+
+#: src/widgets/done_dialog.rs:81
+msgid "Well done, you completed the puzzle!"
+msgstr "Bravo, vous avez résolu le puzzle !"
+
+#: src/widgets/popover_number.rs:84
+msgid "Clear"
+msgstr "Effacer"
+
+#: src/widgets/print_job.rs:145
+msgid "Error Printing Puzzles"
+msgstr "Erreur lors de l’impression des puzzles"
+
+#: src/widgets/print_job.rs:244
+msgid "solution"
+msgstr "solution"
+
+#: src/widgets/game_view.rs:494
+msgid "Checkpoint set"
+msgstr "Point d’étape défini"
+
+#: src/widgets/game_view.rs:503
+msgid "Undo to Last Checkpoint?"
+msgstr "Annuler jusqu’au dernier point d’étape ?"
+
+#: src/widgets/game_view.rs:505
+msgid ""
+"Are you sure that you want to undo all actions since the last checkpoint?"
+msgstr "Êtes-vous sûr de vouloir annuler toutes les actions depuis le dernier point d’étape ?"
+
+#: src/widgets/game_view.rs:508 src/widgets/preferences_dialog.rs:257
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/widgets/game_view.rs:509
+msgid "Undo"
+msgstr "Annuler"
+
+#: src/widgets/game_view.rs:673
+#, rust-format
+msgid "{puzzle_name} {difficulty} Difficulty"
+msgstr "{puzzle_name} — difficulté {difficulty}"
+
+#: src/widgets/preferences_dialog.rs:252
+msgid "Reset the High Score Boards?"
+msgstr "Réinitialiser les tableaux des meilleurs scores ?"
+
+#: src/widgets/preferences_dialog.rs:254
+msgid "Are you sure that you want to delete all the high scores?"
+msgstr "Êtes-vous sûr de vouloir supprimer tous les meilleurs scores ?"
+
+#: src/widgets/preferences_dialog.rs:258
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#. Translators: Replace "translator-credits" with your name/username, and optionally
+#. an email or URL.
+#: src/application.rs:325
+msgid "translator-credits"
+msgstr "credits-traducteur"
+
+#: src/application.rs:332
+msgid "Inspiration"
+msgstr "Inspiration"

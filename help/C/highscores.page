@@ -1,0 +1,44 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="highscores">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Display the high score board.</desc>
+  </info>
+
+  <title>Viewing High Scores</title>
+
+  <media its:translate="no" type="image" src="figures/highscores.png">
+    <p>High score board</p>
+  </media>
+
+  <p>
+    <app>Hexkudo</app> saves the 10 best times for each puzzle.
+    For accessing the high score boards, click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) and select <gui style="menuitem">Scores</gui>.
+  </p>
+
+  <p>The menu at the top of the high score window enables you to select puzzles.</p>
+
+  <note style="info">
+    <p>Your time is added to the score board only when the <link xref="time">timer</link> is enabled.</p>
+  </note>
+
+  <p>You can reset all the score boards, and loose all your scores, by going to the <gui style="menuitem">Preferences</gui> dialog and clicking <gui style="button">Reset High Score Boards</gui>.</p>
+
+</page>

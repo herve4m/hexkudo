@@ -1,0 +1,45 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="time">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>How long it takes you to solve puzzles.</desc>
+  </info>
+
+  <title>Timing Your Game</title>
+
+  <media its:translate="no" type="image" src="figures/time.png">
+    <p>Timer and pause button</p>
+  </media>
+
+  <p>
+    <app>Hexkudo</app> can display a timer to show how long it takes you to solve the puzzle.
+    When you complete the puzzle, <app>Hexkudo</app> adds your time to the <link xref="highscores">high score</link> board.
+  </p>
+
+  <p>You can pause and resume the game by clicking on <gui style="button">Pause</gui>, or by using the <key>P</key> keyboard shortcut.</p>
+
+  <p>You can also disable the timer:</p>
+
+  <steps>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>).</p></item>
+    <item><p>Go to <gui style="menuitem">Preferences</gui>.</p></item>
+    <item><p>In the <gui style="group">General</gui> section, clear the <gui style="button">Timer and Highscores</gui> checkbox.</p></item>
+  </steps>
+</page>

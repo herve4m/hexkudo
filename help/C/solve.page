@@ -1,0 +1,44 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="solve">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Solve cells and puzzles.</desc>
+  </info>
+
+  <title>Getting Help Solving Puzzles</title>
+
+  <p>
+    If you get stuck, then <app>Hexkudo</app> can help you by revealing the value of a cell of your choice.
+    And if you decide to give up, then <app>Hexkudo</app> can reveal the whole puzzle.
+  </p>
+
+  <p>You can solve a cell:</p>
+
+  <steps>
+    <item><p>Select the cell with the mouse or the keyboard.</p></item>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) and select <gui style="menuitem">Solve Current Cell</gui>.</p></item>
+  </steps>
+
+  <p>You can also solve the whole puzzle by clicking the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) and selecting <gui style="menuitem">Solve Puzzle</gui>.</p>
+
+  <note style="important">
+    <p>When you ask <app>Hexkudo</app> to solve a cell or the puzzle, you forfeit recording you time in the high score board.</p>
+  </note>
+</page>

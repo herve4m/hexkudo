@@ -1,0 +1,29 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="save-resume">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Save and resume the current game.</desc>
+  </info>
+
+  <title>Saving and Resuming</title>
+
+  <p>Your game is saved automatically when you close the application, and it is opened when your restart <app>Hexkudo</app>.</p>
+  <p>If you would like to stop playing that game and begin a new one, then click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>), and select <gui style="menuitem">New Game</gui>.</p>
+</page>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2025 Hervé Quatremain
+
+  This file is part of Hexkudo.
+
+  Hexkudo is free software: you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+
+  Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with
+  Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<schemalist gettext-domain="hexkudo">
+  <enum id="@application_id@.difficulty">
+    <value nick="easy" value="0"/>
+    <value nick="medium" value="1"/>
+    <value nick="hard" value="2"/>
+  </enum>
+  <enum id="@application_id@.zoom-level">
+    <value nick="small" value="0"/>
+    <value nick="medium" value="1"/>
+    <value nick="large" value="2"/>
+  </enum>
+  <schema id="@application_id@" path="/io/github/herve4m/Hexkudo/">
+    <key name="difficulty" enum="@application_id@.difficulty">
+      <default>"easy"</default>
+      <summary>Puzzle difficulty</summary>
+      <description>Difficulty level of the puzzle to resolve.</description>
+    </key>
+    <key name="puzzle" type="s">
+      <default>'Classic'</default>
+      <summary>Puzzle name</summary>
+      <description>Name of the puzzle.</description>
+    </key>
+    <key name="zoom-level" enum="@application_id@.zoom-level">
+      <default>"medium"</default>
+      <summary>Zoom level</summary>
+      <description>Size of the numbers in the puzzle cells.</description>
+    </key>
+    <key name="print-difficulty" enum="@application_id@.difficulty">
+      <default>"easy"</default>
+      <summary>Difficulty of the puzzles to print</summary>
+      <description>Difficulty level of the puzzles to print.</description>
+    </key>
+    <key name="print-puzzle" type="s">
+      <default>'Classic'</default>
+      <summary>Name of the puzzles to print</summary>
+      <description>Name of the puzzle you want to print.</description>
+    </key>
+    <key name="print-solution" type="b">
+      <default>false</default>
+      <summary>Print puzzle solution</summary>
+      <description>Whether to print the puzzle solution as well.</description>
+    </key>
+    <key name="print-number" type="i">
+      <default>4</default>
+      <range min="1" max="100" />
+      <summary>Number of puzzles to print</summary>
+      <description>Total number of puzzles you want to print.</description>
+    </key>
+    <key name="print-number-per-page" type="i">
+      <default>2</default>
+      <range min="1" max="10" />
+      <summary>Number of puzzles to print per page</summary>
+      <description>Number of puzzles you want to print per page.</description>
+    </key>
+    <key name="default-width" type="i">
+      <default>550</default>
+      <summary>Width of the window in pixels</summary>
+    </key>
+    <key name="default-height" type="i">
+      <default>480</default>
+      <summary>Height of the window in pixels</summary>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <summary>true if the window is maximized</summary>
+    </key>
+    <key name="window-is-fullscreen" type="b">
+      <default>false</default>
+      <summary>true if the window is fullscreen</summary>
+    </key>
+    <key name="show-errors" type="b">
+      <default>false</default>
+      <summary>Show the error counter</summary>
+      <description>Show the number of errors during solving the puzzle.</description>
+    </key>
+    <key name="show-timer" type="b">
+      <default>true</default>
+      <summary>Show the timer</summary>
+      <description>Show the timer during solving the puzzle.</description>
+    </key>
+    <key name="show-warnings" type="b">
+      <default>true</default>
+      <summary>Highlight mistakes</summary>
+      <description>Highlight cells with wrong values.</description>
+    </key>
+    <key name="show-duplicates" type="b">
+      <default>true</default>
+      <summary>Highlight duplicated cells</summary>
+      <description>Highlight cells that have the same value.</description>
+    </key>
+    <key name="draw-path" type="b">
+      <default>true</default>
+      <summary>Draw a line over the path</summary>
+    </key>
+    <key name="number-picker-second-click" type="b">
+      <default>false</default>
+      <summary>Display the number picker on second click</summary>
+      <description>When true, the first click selects the cell and the second click shows the number picker popup.</description>
+    </key>
+    <key name="use-default-color-cell-values" type="b">
+      <default>true</default>
+      <summary>Use the default color for cell values</summary>
+      <description>Whether to use the puzzle default color for the cell numbers.</description>
+    </key>
+    <key name="color-cell-values" type="(dddd)">
+      <default>(0.0, 0.0, 0.0, 1.0)</default>
+      <summary>Color of the cell values</summary>
+      <description>Color (red, green, blue, alpha) of the cell numbers.</description>
+    </key>
+    <key name="use-default-color-cell-wrong" type="b">
+      <default>true</default>
+      <summary>Use the default color for cell with wrong values</summary>
+      <description>Whether to use the puzzle default color for the numbers in duplicated or cells in error.</description>
+    </key>
+    <key name="color-cell-wrong" type="(dddd)">
+      <default>(0.933, 0.0, 0.0, 1.0)</default>
+      <summary>Color of the cell values for cells in error</summary>
+      <description>Color (red, green, blue, alpha) of the cell numbers for duplicated or cells in error.</description>
+    </key>
+    <key name="use-default-color-bg" type="b">
+      <default>true</default>
+      <summary>Use the default color for cell background</summary>
+      <description>Whether to use the puzzle default color for cell background.</description>
+    </key>
+    <key name="color-cell-bg" type="(dddd)">
+      <default>(0.98, 0.98, 0.98, 1.0)</default>
+      <summary>Color of the cell background</summary>
+      <description>Color (red, green, blue, alpha) of the cell background.</description>
+    </key>
+    <key name="use-default-color-hint-bg" type="b">
+      <default>true</default>
+      <summary>Use the default color for the background of hint cells</summary>
+      <description>Whether to use the puzzle default background color for cells that provide hints.</description>
+    </key>
+    <key name="color-cell-hint-bg" type="(dddd)">
+      <default>(0.894, 0.894, 0.894, 1.0)</default>
+      <summary>Background color of the hint cells</summary>
+      <description>Background color (red, green, blue, alpha) for the cells that provide hints.</description>
+    </key>
+    <key name="use-default-sel-color-bg" type="b">
+      <default>true</default>
+      <summary>Use the default color for the selected cell background</summary>
+      <description>Whether to use the puzzle default color for the background of the selected cell.</description>
+    </key>
+    <key name="color-sel-cell-bg" type="(dddd)">
+      <default>(0.568, 0.737, 1.0, 1.0)</default>
+      <summary>Background color of the selected cell</summary>
+      <description>Color (red, green, blue, alpha) of the selected cell background.</description>
+    </key>
+    <key name="use-default-color-borders" type="b">
+      <default>true</default>
+      <summary>Use the default color for cell borders</summary>
+      <description>Whether to use the puzzle default color for the cell borders and diamonds.</description>
+    </key>
+    <key name="color-cell-borders" type="(dddd)">
+      <default>(0.0, 0.0, 0.0, 1.0)</default>
+      <summary>Color of the cell borders</summary>
+      <description>Color (red, green, blue, alpha) of the cell borders and diamonds.</description>
+    </key>
+    <key name="use-default-color-path" type="b">
+      <default>true</default>
+      <summary>Use the default color for path</summary>
+      <description>Whether to use the puzzle default color for the path over the cells.</description>
+    </key>
+    <key name="color-path" type="(dddd)">
+      <default>(0.0, 0.0, 0.0, 0.378)</default>
+      <summary>Color of the path</summary>
+      <description>Color (red, green, blue, alpha) of the path over the cells.</description>
+    </key>
+    <key name="show-puzzle-bg" type="b">
+      <default>true</default>
+      <summary>Show the puzzle background</summary>
+      <description>Whether to display the colored background behind the puzzle.</description>
+    </key>
+    <key name="sel-thick-border" type="b">
+      <default>false</default>
+      <summary>Use thick borders for the selected cell</summary>
+      <description>Whether to draw a thick border to make the selected cell more visible.</description>
+    </key>
+  </schema>
+</schemalist>

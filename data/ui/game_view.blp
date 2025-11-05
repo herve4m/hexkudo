@@ -1,0 +1,262 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+game_view.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoGameView: Adw.Bin {
+  name: "game_view";
+  notify::show-puzzle-bg => $show_puzzle_bg_cb() swapped;
+
+  Adw.ToolbarView {
+    top-bar-style: raised;
+
+    [top]
+    Adw.HeaderBar headerbar {
+      centering-policy: strict;
+
+      title-widget: Adw.WindowTitle window_title {
+        title: _("Hexkudo");
+      };
+
+      [end]
+      $HexkudoMenuButton menu_button {}
+
+      [start]
+      Button undo_button {
+        sensitive: false;
+        valign: center;
+        tooltip-text: _("Undo Action");
+        can-focus: true;
+        focus-on-click: false;
+        action-name: "game-view.undo";
+        icon-name: "edit-undo-symbolic";
+      }
+
+      [start]
+      Button redo_button {
+        sensitive: false;
+        valign: center;
+        tooltip-text: _("Redo Action");
+        can-focus: true;
+        focus-on-click: false;
+        action-name: "game-view.redo";
+        icon-name: "edit-redo-symbolic";
+      }
+
+      /*
+      [start]
+      ToggleButton earmark_mode_button {
+        halign: center;
+        valign: center;
+        focus-on-click: false;
+        action-name: "game-view.earmark-mode";
+        tooltip-text: _("Earmark Mode");
+        icon-name: "pencil-symbolic";
+      }
+      */
+      Stack play_pause_stack {
+        transition-type: crossfade;
+        visible: false;
+        notify::visible => $timer_visible_cb() swapped;
+
+        Button pause_button {
+          sensitive: false;
+          valign: center;
+          can-focus: true;
+          focus-on-click: false;
+          action-name: "game-view.pause-resume";
+          tooltip-text: _("Pause");
+          icon-name: "media-playback-pause-symbolic";
+        }
+
+        Button play_button {
+          sensitive: false;
+          valign: center;
+          can-focus: true;
+          focus-on-click: false;
+          tooltip-text: _("Play");
+          action-name: "game-view.pause-resume";
+          icon-name: "media-playback-start-symbolic";
+        }
+      }
+
+      [end]
+      Box error_box {
+        can-focus: false;
+        spacing: 6;
+        halign: center;
+        visible: false;
+        tooltip-text: _("Mistake counter");
+
+        Image error_image {
+          can-focus: false;
+          icon-name: "error-symbolic";
+          icon-size: normal;
+        }
+
+        Label error_label {
+          can-focus: false;
+          halign: center;
+
+          styles [
+            "numeric",
+          ]
+        }
+      }
+
+      [end]
+      Box clock_box {
+        can-focus: false;
+        spacing: 6;
+        halign: center;
+        visible: false;
+        tooltip-text: _("Timer");
+
+        Image clock_image {
+          can-focus: false;
+          icon-name: "preferences-system-time-symbolic";
+          icon-size: normal;
+        }
+
+        Label clock_label {
+          can-focus: false;
+          halign: center;
+
+          styles [
+            "numeric",
+          ]
+        }
+      }
+    }
+
+    content: Adw.Bin draw_bin {
+      styles [
+        "game-view",
+      ]
+
+      Adw.ToastOverlay toast_overlay {
+        Overlay overlay {
+          hexpand: true;
+          vexpand: true;
+          visible: true;
+
+          $HexkudoDrawingArea drawing_area {}
+
+          [overlay]
+          Adw.Spinner spinner {
+            width-request: 64;
+            height-request: 64;
+          }
+
+          [overlay]
+          Box box_paused {
+            visible: false;
+            orientation: vertical;
+            valign: center;
+
+            Label paused_label {
+              vexpand: true;
+              label: _("Paused");
+            }
+
+            Button resume_button {
+              halign: center;
+              tooltip-text: _("Continue the game");
+              action-name: "game-view.pause-resume";
+              label: _("Resume");
+
+              ShortcutController {
+                Shortcut {
+                  trigger: "p";
+                  action: "action(game-view.pause-resume)";
+                }
+              }
+
+              styles [
+                "suggested-action",
+              ]
+            }
+          }
+        }
+      }
+    };
+  }
+
+  ShortcutController {
+    Shortcut {
+      trigger: "<Primary>p";
+      action: "action(game-view.print-current)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>minus|ZoomOut|<Primary>KP_Subtract";
+      action: "action(game-view.zoom-out)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>plus|<Primary>equal|ZoomIn|<Primary>KP_Add";
+      action: "action(game-view.zoom-in)";
+    }
+
+    Shortcut {
+      trigger: "u|<Primary>z";
+      action: "action(game-view.undo)";
+    }
+
+    Shortcut {
+      trigger: "r|<Shift><Primary>z";
+      action: "action(game-view.redo)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>r";
+      action: "action(game-view.reset-puzzle)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>s";
+      action: "action(game-view.set-checkpoint)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>l";
+      action: "action(game-view.solve-current-cell)";
+    }
+
+    Shortcut {
+      trigger: "p";
+      action: "action(game-view.pause-resume)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>e";
+      action: "action(game-view.show-warnings)";
+    }
+
+    Shortcut {
+      trigger: "<Primary>d";
+      action: "action(game-view.show-duplicates)";
+    }
+  }
+}

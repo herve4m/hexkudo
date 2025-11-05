@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Hexkudo
+GenericName=Logic game
+Comment=Find your path in a maze of numbers
+Exec=hexkudo
+Icon=@icon@
+Terminal=false
+Type=Application
+Categories=Game
+Keywords=GTK;GNOME;sudoku;rikudo;puzzle;
+StartupNotify=true
+DBusActivatable=true

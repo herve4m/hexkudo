@@ -1,0 +1,96 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+print_dialog.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoPrintDialog: Adw.Dialog {
+  title: _("Print Multiple Puzzles");
+  content-width: 460;
+  default-widget: print_button;
+  focus-widget: print_button;
+
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {}
+
+    content: Adw.Clamp {
+      maximum-size: 400;
+      margin-top: 12;
+      margin-bottom: 12;
+
+      Box {
+        orientation: vertical;
+
+        Adw.PreferencesGroup options_group {
+          Adw.SpinRow n_puzzles {
+            title: _("Number of puzzles");
+
+            adjustment: Adjustment {
+              lower: 1;
+              upper: 100;
+              step-increment: 1;
+              page-increment: 10;
+            };
+          }
+
+          Adw.SpinRow n_puzzles_per_page {
+            title: _("Number of puzzles per page");
+
+            adjustment: Adjustment {
+              lower: 1;
+              upper: 10;
+              step-increment: 1;
+              page-increment: 1;
+            };
+          }
+
+          Adw.SwitchRow solution {
+            title: _("Include solution");
+          }
+
+          Adw.ComboRow puzzles {
+            title: _("Puzzle");
+
+            model: StringList puzzle_string_list {};
+          }
+        }
+      }
+    };
+
+    [bottom]
+    ActionBar {
+      [end]
+      Button print_button {
+        label: _("_Print");
+        receives-default: false;
+        use-underline: true;
+        clicked => $print_cb() swapped;
+
+        styles [
+          "suggested-action",
+        ]
+      }
+    }
+  }
+}

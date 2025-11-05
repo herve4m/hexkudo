@@ -1,0 +1,41 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="topic"
+      id="print-inprogress-puzzles">
+
+  <info>
+    <link type="guide" xref="index#print"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Print the current puzzle.</desc>
+  </info>
+
+  <title>Printing Your Game</title>
+
+  <p>You can print the <app>Hexkudo</app> puzzle that you are currently playing.</p>
+
+  <steps>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>).</p></item>
+    <item><p>Go to <gui style="menuitem">Print</gui> and select <gui style="menuitem">Print Current Puzzle</gui>.</p></item>
+    <item><p>Select your printer.</p></item>
+    <item>
+      <p>
+        Click <gui style="button">Print</gui>.
+        The puzzle is printed on two pages.
+        The first page contains the unsolved puzzle, and the second page its solution.
+      </p>
+    </item>
+  </steps>
+</page>

@@ -1,0 +1,111 @@
+/*
+Based on GNOME Sudoku at https://gitlab.gnome.org/GNOME/gnome-sudoku
+
+start_view.blp
+
+Copyright 2025 Hervé Quatremain
+
+This file is part of Hexkudo.
+
+Hexkudo is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Hexkudo is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Hexkudo. If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+using Gtk 4.0;
+using Adw 1;
+
+template $HexkudoStartView: Adw.Bin {
+  Adw.ToolbarView {
+    top-bar-style: raised;
+
+    [top]
+    Adw.HeaderBar headerbar {
+      centering-policy: strict;
+
+      title-widget: Adw.WindowTitle windowtitle {
+        title: _("Hexkudo");
+        subtitle: _("Select Difficulty");
+      };
+
+      [end]
+      $HexkudoMenuButton menu_button {}
+    }
+
+    content: Adw.StatusPage {
+      title: _("Select Puzzle Difficulty");
+      valign: start;
+
+      child: Adw.Clamp {
+        maximum-size: 400;
+
+        Box {
+          orientation: vertical;
+
+          Adw.PreferencesGroup {
+            Adw.ActionRow {
+              [prefix]
+              CheckButton easy_check {
+                can-focus: false;
+                can-target: false;
+              }
+
+              title: C_("Difficulty", "_Easy");
+              use-underline: true;
+              activatable-widget: easy_check;
+            }
+
+            Adw.ActionRow {
+              [prefix]
+              CheckButton medium_check {
+                group: easy_check;
+                can-focus: false;
+                can-target: false;
+                // active: true;
+              }
+
+              title: C_("Difficulty", "_Medium");
+              use-underline: true;
+              activatable-widget: medium_check;
+            }
+
+            Adw.ActionRow {
+              [prefix]
+              CheckButton hard_check {
+                group: easy_check;
+                can-focus: false;
+                can-target: false;
+              }
+
+              title: C_("Difficulty", "_Hard");
+              use-underline: true;
+              activatable-widget: hard_check;
+            }
+          }
+
+          Button selec_puzzle_button {
+            margin-top: 12;
+            halign: center;
+            label: _("_Select Puzzle");
+            use-underline: true;
+            clicked => $select_puzzle_cb() swapped;
+
+            styles [
+              "pill",
+              "suggested-action",
+            ]
+          }
+        }
+      };
+    };
+  }
+}

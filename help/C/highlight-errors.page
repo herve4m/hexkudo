@@ -1,0 +1,51 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="guide"
+      id="highlight">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="0.1.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+    <desc>Highlight cells with errors.</desc>
+  </info>
+
+  <title>Displaying Errors</title>
+
+  <media its:translate="no" type="image" src="figures/errors.png">
+    <p>Highlight errors</p>
+  </media>
+
+  <p>
+    <app>Hexkudo</app> helps you identify your errors by displaying cell numbers in red.
+    For a more challenging game, you can disable this feature:
+  </p>
+
+  <steps>
+    <item><p>Click the menu button (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>).</p></item>
+    <item><p>Go to <gui style="menuitem">Preferences</gui>.</p></item>
+    <item><p>In the <gui style="group">Warnings</gui> section, clear the <gui style="button">Highlighting Wrong Values</gui> checkbox for preventing <app>Hexkudo</app> from showing you the cells with wrong values.</p></item>
+    <item><p>Clear the <gui style="button">Highlighting Duplicate Cells</gui> checkbox for preventing <app>Hexkudo</app> from showing you when several cells have the same value.</p></item>
+  </steps>
+
+  <media its:translate="no" type="image" src="figures/pref-warnings.png">
+    <p>Highlighting errors</p>
+  </media>
+
+  <p>
+    You can temporarily switch between showing or hiding errors by using the <keyseq><key>Ctrl</key><key>E</key></keyseq> shortcut.
+    For duplicated cells, use the <keyseq><key>Ctrl</key><key>D</key></keyseq> shortcut.
+  </p>
+</page>
