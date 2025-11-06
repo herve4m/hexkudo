@@ -34,7 +34,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/jwestman/blueprint-compiler
-        branch: 0.18.0
+        tag: 0.18.0
   - name: hexkudo
     builddir: true
     buildsystem: meson
