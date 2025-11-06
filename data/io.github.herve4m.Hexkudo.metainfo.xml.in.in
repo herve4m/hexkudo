@@ -56,7 +56,7 @@
   </screenshots>
 
   <releases>
-    <release version="0.1.0" date="2025-01-31">
+    <release version="0.1.0" date="2025-11-06">
       <url type="details">https://github.com/herve4m/hexkudo/blob/main/CHANGELOG.rst#v010</url>
       <description translate="no">
         <p>Initial release</p>
