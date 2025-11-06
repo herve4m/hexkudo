@@ -13,11 +13,6 @@ finish-args:
   - --device=dri
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin
-  build-args:
-    - --share=network
-  # env:
-  #   RUST_BACKTRACE: "1"
-  #   RUST_LOG: hexkudo=debug
 cleanup:
   - /include
   - /lib/pkgconfig
@@ -30,6 +25,8 @@ cleanup:
   - "*.a"
 modules:
   - name: blueprint-compiler
+    cleanup:
+      - "*"
     buildsystem: meson
     sources:
       - type: git
