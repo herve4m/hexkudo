@@ -23,6 +23,9 @@ RUN dnf update -y && \
     flatpak-builder \
     meson \
     python3-pip \
+    python3-gobject \
+    itstool \
+    desktop-file-utils \
     && dnf clean all
 
 # Install rustup (the recommended Rust installer)
