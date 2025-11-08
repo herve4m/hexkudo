@@ -4,18 +4,12 @@ FROM registry.fedoraproject.org/fedora:latest
 # Install all development dependencies
 RUN dnf update -y && \
     dnf install -y \
-    # C compiler and build tools
     gcc \
     make \
-    # pkg-config is essential for build scripts to find libraries
     pkg-config \
-    # GTK4 and its dependencies (gobject, glib, pango, cairo, etc.)
     gtk4-devel \
-    # Libadwaita development files
     libadwaita-devel \
-    # curl is needed to download rustup
     curl \
-    # Common Rust dependency for networking/crypto
     openssl-devel \
     pre-commit \
     git \
@@ -31,6 +25,9 @@ RUN dnf update -y && \
 # Install rustup (the recommended Rust installer)
 # We run this in a non-interactive way using the -y flag
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# Configure Git
+RUN git config --system safe.directory '*'
 
 # Add Cargo's bin directory to the system's PATH
 # This makes `rustc`, `cargo`, etc. available in the shell

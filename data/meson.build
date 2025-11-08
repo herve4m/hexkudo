@@ -25,7 +25,7 @@ blueprints = custom_target(
   ),
   output: '.',
   install_dir: '@CURRENT_SOURCE_DIR@',
-  command: [blueprintc, 'batch-compile', '--minify', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
+  command: [blueprintc, 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
 )
 
 
