@@ -1,0 +1,42 @@
+---
+name: Create a Release on Tag Creation
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/herve4m/hexkudo/validation:latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v5
+
+      - name: Prepare rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          components: rustfmt, clippy
+
+      - name: Prepare the project
+        run: meson setup builddir
+
+      - name: Build the release
+        run: meson dist -C builddir --no-tests
+
+      - name: Create the release and attach the archive
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: builddir/meson-dist/hexkudo-${{ github.ref_name }}.tar.xz
+          tag: ${{ github.ref }}
+          body: Release for version ${{ github.ref_name }}.
+          overwrite: true
+...
