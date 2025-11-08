@@ -35,6 +35,7 @@ MANIFEST
 .flatpak/
 .flatpak-builder/
 repo/
+/subprojects/blueprint-compiler
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

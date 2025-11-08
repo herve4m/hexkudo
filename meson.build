@@ -20,6 +20,12 @@ subdir('src')
 subdir('help')
 subdir('po')
 
+meson.add_dist_script(
+  'build-aux/dist-vendor.sh',
+  meson.project_build_root() / 'meson-dist' / meson.project_name() + '-' + meson.project_version(),
+  meson.project_source_root()
+)
+
 gnome.post_install(
      glib_compile_schemas: true,
     gtk_update_icon_cache: true,
