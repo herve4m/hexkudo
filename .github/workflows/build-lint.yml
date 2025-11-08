@@ -24,10 +24,12 @@ jobs:
 
       - name: Install SDK and runtime
         run: |
-          flatpak install -y --user flathub org.gnome.Sdk/x86_64/49 org.gnome.Platform/x86_64/49 \
+          flatpak install -y --user flathub org.gnome.Sdk/x86_64/49 \
+            org.gnome.Platform/x86_64/49 \
             org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
 
-      - uses: actions/checkout@v5
+      - name: Check out the code
+        uses: actions/checkout@v5
 
       - name: Build the flatpak package
         run: |

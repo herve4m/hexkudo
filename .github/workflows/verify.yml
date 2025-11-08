@@ -1,6 +1,5 @@
 ---
-# This workflow action runs pre-commit.
-name: Build and Verify Code
+name: Build and Verify the Code
 
 on:
   push:
@@ -14,9 +13,11 @@ jobs:
     container:
       image: ghcr.io/herve4m/hexkudo/validation:latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Check out the code
+        uses: actions/checkout@v5
 
-      - uses: actions-rs/toolchain@v1
+      - name: Prepare rust
+        uses: actions-rs/toolchain@v1
         with:
           profile: minimal
           toolchain: stable

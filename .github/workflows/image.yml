@@ -1,5 +1,5 @@
 ---
-name: GitHub Image
+name: Prepare the GitHub Build Image
 
 on:
   # Rebuild the container every week
@@ -27,9 +27,10 @@ jobs:
       packages: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Check out the code
+        uses: actions/checkout@v5
 
-      - name: Log in to the Container registry
+      - name: Log in to the container registry
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
@@ -45,7 +46,7 @@ jobs:
             # set latest tag for main branch
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
 
-      - name: Build and push Docker image
+      - name: Build and push the Docker image
         uses: docker/build-push-action@v6
         with:
           push: ${{ github.event_name != 'pull_request' }}
