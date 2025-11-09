@@ -29,8 +29,8 @@
 - Create a branch, such as `herve4m/v0.8.1`.
   Change to the branch.
 - Edit the `io.github.herve4m.Hexkudo.yaml` file.
-  Change the `tag` and the `commit` entries.
-  For the commit, go to https://github.com/herve4m/hexkudo/tags, click the commit for the tag, and use the copy icon to get the full SHA.
+  Change the `url` and the `sha256` entries.
+  For these entries, go to https://github.com/herve4m/hexkudo/releases.
 - Commit and create a PR named `v<version>`, such as `v0.8.1`.
 - Wait for the automatic build to complete.
 - Merge the PR and delete the branch.
