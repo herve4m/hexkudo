@@ -88,7 +88,7 @@ use crate::generator::vertexes::Vertexes;
 
 /// Build random Hexkudo paths for developers.
 #[derive(Parser)]
-#[command(about, long_about = None, version, long_version = COPYRIGHT_NOTICE)]
+#[command(about, long_about = None, version, long_version = COPYRIGHT_NOTICE, ignore_errors = true)]
 struct Args {
     /// List the puzzles
     #[arg(short, long, default_value_t = false)]

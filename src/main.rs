@@ -65,7 +65,5 @@ fn main() -> glib::ExitCode {
     // desktop features such as file opening and single-instance applications.
     let app: HexkudoApplication = HexkudoApplication::new();
 
-    // Because the arguments are processed by Clap, pass an empty argument list to the GApplication
-    let args: Vec<String> = Vec::new();
-    app.run_with_args(&args)
+    app.run()
 }
